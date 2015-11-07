@@ -47,6 +47,16 @@ html, body {
     position:relative;
     vertical-align:middle;
     text-align:center;
+    font-size: 1.2em;
+    padding: 0 12em 100px;
+    line-height: 1.8em;
+}
+
+@media (min-width: 1440px) {
+    .content-b {
+        padding: 0 20em 200px;
+        font-size: 1.4em;
+    }
 }
 
 .content-footer {
@@ -91,8 +101,28 @@ header.left-bar #logo {
     display: block;
 }
 
+header.left-bar #logo-img {
+    background: url('../img/logo64.png') no-repeat 0 0;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+    transition: all 0.2s;
+}
+
 header.left-bar h1 {
     font-size: 1.2em;
+    transition: all 0.2s;
+}
+
+@media (min-width: 1440px) {
+    header.left-bar h1 {
+        font-size: 1.8em;
+    }
+    header.left-bar #logo-img {
+        background: url('../img/logo128.png') no-repeat 0 0;
+        width: 128px;
+        height: 128px;
+    }
 }
 
 @keyframes titleComing {
@@ -192,12 +222,9 @@ header.left-bar nav > ul > li > a:hover {
 div.page-content {
     margin-left: 22%;
     color: white;
-    text-shadow: 0 0 1px rgba(0, 0, 0, .5), 1px 1px 1px rgba(0, 0, 0, .25), 0 0 20px rgba(0, 0, 0, 0.15);
+    text-shadow: 0 0 1px rgba(0, 0, 0, .65), 1px 1px 1px rgba(0, 0, 0, .30), 0 0 20px rgba(0, 0, 0, 0.25);
 }
 
-.content-b {
-    padding-bottom: 100px;
-}
 
 div.page-content div.not-background {
     color: #333;
@@ -242,6 +269,30 @@ div#home-page {
 div#home-page.leaving {
     animation: contentGoing 0.2s both cubic-bezier(.22, .61, .36, 1) 0s;
 }
+
+div#home-page h2 {
+    font-size: 2em;
+}
+
+div#home-page .background h2::after {
+    content: '';
+    width: 3em;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    margin: -50px 0 0 -1.5em;
+}
+
+div#home-page h3 {
+    font-size: 1.7em;
+}
+
+div#home-page .not-background h3 {
+    margin-bottom: 2.5em;
+}
+
 
 /*
 div.page-content > div {

@@ -23,23 +23,40 @@ const Home = React.createClass({
             <AppDiv id='home-page'>
                 <Background
                     type='parallax'
-                    image='http://www.minimit.com/images/picjumbo.com_DSC_3274.jpg'
-                    data-img-width='1600'
-                    data-img-height='1024'
+                    image='img/Accueil01.jpg'
+                    data-img-width='1920'
+                    data-img-height='1280'
                     data-diff='200'
                 >
-                    <div className='content-a'><div className='content-b'><h2>Welcome Home!</h2></div></div>
+                    <div className='content-a'>
+                        <div className='content-b'>
+                            <h2>Jérôme Bilquez</h2>
+                            <h3>Graphiste 3D</h3>
+                        </div>
+                    </div>
                     
                     <div className='content-footer'>
                         <a 
                             className='button'
                             onClick={this.scrollDown}
-                        >Click me!</a>
+                        >&#8595; &nbsp; &nbsp; Découvrez qui je suis &nbsp; &nbsp; &#8595;</a>
                     </div>
 
                 </Background>
                <Background id='intro'>
-                    <div className='content-a'><div className='content-b'><h2>Welcome Home!</h2></div></div>
+                    <div className='content-a'><div className='content-b'>
+                        <h2>Jérôme Bilquez</h2>
+                        <h3>Graphiste 3D en architecture</h3>
+                        <p>
+                            Je suis Jérôme Bilquez, graphiste 3D, spécialisé
+                            dans les images de synthèses et
+                            illustrations architecturales.
+                        
+                            Ma mission est de vous accompagner dans la 
+                            mise-en-image de vos projets à l'aide de visuels
+                            flatteurs et de hautes qualités.
+                        </p>
+                    </div></div>
                 </Background>
             </AppDiv>
         );

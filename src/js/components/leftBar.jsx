@@ -8,7 +8,7 @@ const LeftTitle = React.createClass({
     render() {
         return (
             <Link id="logo" to="/home" title="Retourner à la page d'accueil">
-                <img src="img/logo64.png" alt="J. Bilquez logo" />
+                <div id="logo-img" />
                 <h1>J. Bilquez - Portfolio</h1>
             </Link>
         );
