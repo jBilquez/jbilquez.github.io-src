@@ -31,7 +31,7 @@ const Home = React.createClass({
                     <div className='content-a'>
                         <div className='content-b'>
                             <h2>Jérôme Bilquez</h2>
-                            <h3>Graphiste 3D</h3>
+                            <h3>Portfolio</h3>
                         </div>
                     </div>
                     
@@ -53,7 +53,7 @@ const Home = React.createClass({
                             illustrations architecturales.
                         
                             Ma mission est de vous accompagner dans la 
-                            mise-en-image de vos projets à l'aide de visuels
+                            mise en image de vos projets à l'aide de visuels
                             flatteurs et de hautes qualités.
                         </p>
                     </div></div>

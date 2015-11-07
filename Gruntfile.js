@@ -26,7 +26,7 @@ grunt.initConfig({
             {
                 expand: true,
                 cwd: 'src/img',
-                src: '*',
+                src: '**',
                 dest: 'dist/img'
             },
             { src: 'node_modules/node-waves/dist/waves.min.css', dest: 'dist/css/waves.min.css' },

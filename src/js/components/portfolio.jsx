@@ -11,46 +11,66 @@ const Portfolio = React.createClass({
 
     render() {
         return (
-            <AppDiv id='home-page'>
-                <AppDiv><Background
-                    type='parallax'
-                    fullscreen={false}
-                    image='http://www.minimit.com/images/picjumbo.com_IMG_6648.jpg'
-                    data-img-width='1600'
-                    data-img-height='1024'
-                    data-diff='100'
-                >
-                    <div className='content-a'><div className='content-b'>regular background</div></div>
-                </Background>
-                <Background
-                    type='fixed'
-                    color='#ccc'
-                    fullscreen={false}
-                /></AppDiv>
-                <AppDiv
-                    className='background parallax'
-                    style={{backgroundImage: 'url(http://www.minimit.com/images/picjumbo.com_IMG_6648.jpg)'}}
-                    data-img-width='1600'
-                    data-img-height='1024'
-                    data-diff="100"
-                >
-                    <div className='content-a'><div className='content-b'><h2>Portfolio</h2></div></div>
+            <AppDiv id='portfolio-page'>
+                <AppDiv>
+                    <Background
+                        type='parallax'
+                        fullscreen={false}
+                        image='img/portfolio/03_Cirque_Galerie_Parade_03.jpg'
+                        data-img-width='3600'
+                        data-img-height='2025'
+                        data-diff='100'
+                    >
+                        <div className='content-a'><div className='content-b'>regular background</div></div>
+                    </Background>
+                    <Background
+                        type='parallax'
+                        fullscreen={false}
+                        image='img/portfolio/CACF_Cam_03_Amphi_06.jpg'
+                        data-img-width='4000'
+                        data-img-height='1715'
+                        data-diff='100'
+                    />
                 </AppDiv>
                 <AppDiv>
-                    <AppDiv
-                        className='not-fullscreen'
-                        style={{backgroundColor: '#ccc'}}
+                    <Background
+                        type='parallax'
+                        fullscreen={false}
+                        image='img/portfolio/Chartres_BoisParis-Terrasse_03.jpg'
+                        data-img-width='4400'
+                        data-img-height='2200'
+                        data-diff='100'
                     >
-                        <div className='content-a'><div className='content-b'><h2>This is a portfolio</h2></div></div>
-                    </AppDiv>
-                    <AppDiv
-                        className='not-fullscreen background background-fixed'
-                        style={{backgroundImage: 'url(http://www.minimit.com/images/picjumbo.com_IMG_6643.jpg)'}}
-                        data-img-width='1600'
-                        data-img-height='1024'
+                        <div className='content-a'><div className='content-b'>regular background</div></div>
+                    </Background>
+                    <Background
+                        type='parallax'
+                        fullscreen={false}
+                        image='img/portfolio/Coyolles_Vue_entree_02.jpg'
+                        data-img-width='4000'
+                        data-img-height='2000'
+                        data-diff='100'
+                    />
+                </AppDiv>
+                <AppDiv>
+                    <Background
+                        type='parallax'
+                        fullscreen={false}
+                        image='img/portfolio/Piscine_Arcs1800_Cam_Nord_05.jpg'
+                        data-img-width='3840'
+                        data-img-height='2160'
+                        data-diff='100'
                     >
-                        <div className='content-a'><div className='content-b'><h2>Welcom here :)</h2></div></div>
-                    </AppDiv>
+                        <div className='content-a'><div className='content-b'>regular background</div></div>
+                    </Background>
+                    <Background
+                        type='parallax'
+                        fullscreen={false}
+                        image='img/portfolio/Toulouse_Clinique_Terrasse_02.jpg'
+                        data-img-width='4000'
+                        data-img-height='2000'
+                        data-diff='100'
+                    />
                 </AppDiv>
            </AppDiv>
         );
@@ -59,8 +79,8 @@ const Portfolio = React.createClass({
 
     statics: {
         willTransitionFrom: function (transition, element) {
-            if (!$('#home-page').hasClass('leaving')) {
-                $('#home-page').addClass('leaving');
+            if (!$('#portfolio-page').hasClass('leaving')) {
+                $('#portfolio-page').addClass('leaving');
                 transition.abort();
 
                 let delayTransition = function () {

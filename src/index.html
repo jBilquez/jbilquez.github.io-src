@@ -108,6 +108,14 @@
                     path.data("resized-imgW", imgW);
                     path.data("resized-imgH", imgH);
                     path.css("background-size", imgW + "px " + imgH + "px");
+                    
+                    if ($('#portfolio-page').length > 0) {
+                        path.hover(function () {
+                            $(this).css("background-size", (imgW * 1.02) + "px " + (imgH * 1.02) + "px")
+                        }, function () {
+                            $(this).css("background-size", (imgW) + "px " + (imgH) + "px")
+                        });
+                    }
                 });
             }
             $(window).resize(backgroundResize);
