@@ -23,8 +23,16 @@ grunt.initConfig({
                 src: '*.css',
                 dest: 'dist/css'
             },
+            {
+                expand: true,
+                cwd: 'src/img',
+                src: '*',
+                dest: 'dist/img'
+            },
             { src: 'node_modules/node-waves/dist/waves.min.css', dest: 'dist/css/waves.min.css' },
-            { src: 'node_modules/node-waves/dist/waves.min.js', dest: 'dist/js/waves.min.js' }
+            { src: 'node_modules/node-waves/dist/waves.min.js', dest: 'dist/js/waves.min.js' },
+            { src: 'src/favicon.ico', dest: 'dist/favicon.ico' }
+            
             
             ]
         }
