@@ -22,7 +22,7 @@ const LeftMenu = React.createClass({
         return (
             <nav>
                 <ul>
-                    <li><Link to='/home'>Home</Link></li>
+                    <li><Link to='/home'>Accueil</Link></li>
                     <li><Link to='/portfolio'>Portfolio</Link></li>
                 </ul>
             </nav>
