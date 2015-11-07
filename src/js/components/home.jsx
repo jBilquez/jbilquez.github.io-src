@@ -2,6 +2,7 @@
 
 import React from 'react';
 import AppDiv, {Background} from './appDiv.jsx';
+import {Link} from 'react-router';
 
 const Home = React.createClass({
 
@@ -57,6 +58,12 @@ const Home = React.createClass({
                             flatteurs et de hautes qualités.
                         </p>
                     </div></div>
+                    <div className='content-footer'>
+                        <Link 
+                            className='button'
+                            to="/portfolio"
+                        >Découvrir mon Portfolio</Link>
+                    </div>
                 </Background>
             </AppDiv>
         );

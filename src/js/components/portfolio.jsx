@@ -17,8 +17,8 @@ const Portfolio = React.createClass({
                         type='parallax'
                         fullscreen={false}
                         image='img/portfolio/03_Cirque_Galerie_Parade_03.jpg'
-                        data-img-width='3600'
-                        data-img-height='2025'
+                        data-img-width='1600'
+                        data-img-height='900'
                         data-diff='100'
                     >
                         <div className='content-a'><div className='content-b'>regular background</div></div>
@@ -27,8 +27,8 @@ const Portfolio = React.createClass({
                         type='parallax'
                         fullscreen={false}
                         image='img/portfolio/CACF_Cam_03_Amphi_06.jpg'
-                        data-img-width='4000'
-                        data-img-height='1715'
+                        data-img-width='1866'
+                        data-img-height='800'
                         data-diff='100'
                     />
                 </AppDiv>
@@ -37,8 +37,8 @@ const Portfolio = React.createClass({
                         type='parallax'
                         fullscreen={false}
                         image='img/portfolio/Chartres_BoisParis-Terrasse_03.jpg'
-                        data-img-width='4400'
-                        data-img-height='2200'
+                        data-img-width='1600'
+                        data-img-height='800'
                         data-diff='100'
                     >
                         <div className='content-a'><div className='content-b'>regular background</div></div>
@@ -47,8 +47,8 @@ const Portfolio = React.createClass({
                         type='parallax'
                         fullscreen={false}
                         image='img/portfolio/Coyolles_Vue_entree_02.jpg'
-                        data-img-width='4000'
-                        data-img-height='2000'
+                        data-img-width='1600'
+                        data-img-height='800'
                         data-diff='100'
                     />
                 </AppDiv>
@@ -57,8 +57,8 @@ const Portfolio = React.createClass({
                         type='parallax'
                         fullscreen={false}
                         image='img/portfolio/Piscine_Arcs1800_Cam_Nord_05.jpg'
-                        data-img-width='3840'
-                        data-img-height='2160'
+                        data-img-width='1600'
+                        data-img-height='900'
                         data-diff='100'
                     >
                         <div className='content-a'><div className='content-b'>regular background</div></div>
@@ -67,8 +67,8 @@ const Portfolio = React.createClass({
                         type='parallax'
                         fullscreen={false}
                         image='img/portfolio/Toulouse_Clinique_Terrasse_02.jpg'
-                        data-img-width='4000'
-                        data-img-height='2000'
+                        data-img-width='1600'
+                        data-img-height='800'
                         data-diff='100'
                     />
                 </AppDiv>

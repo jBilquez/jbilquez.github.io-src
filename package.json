@@ -26,8 +26,7 @@
     "grunt-babel": "^5.0.3",
     "grunt-browserify": "^4.0.1",
     "grunt-contrib-copy": "^0.8.1",
-    "grunt-contrib-htmlmin": "^0.5.0",
-    "node-waves": "0.7.4"
+    "grunt-contrib-htmlmin": "^0.5.0"
   },
   "scripts": {
     "build": "npm run build-debug",
