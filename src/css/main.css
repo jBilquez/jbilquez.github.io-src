@@ -68,7 +68,7 @@ html, body {
 /* left-bar */
 
 header.left-bar {
-/*    background: white;*/
+    background: white;
     height: 100%;
     width: 22%;
     min-width: 15em;
@@ -79,13 +79,6 @@ header.left-bar {
     margin: 0;
     padding: 8em 0 0;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.16), 0px 3px 10px rgba(0, 0, 0, 0.23);
-    background-color: rgba(255, 255, 255, .1);
-    transition: background-color .2s;
-    text-shadow: 0 0 2px rgba(255, 255, 255, .5), 1px 1px 1px rgba(255, 255, 255, .25);
-}
-
-header.left-bar:hover {
-    background-color: white;
 }
 
 header.left-bar h1 {
@@ -126,7 +119,6 @@ header.left-bar nav > ul > li {
     border-width: 0 0 0 5px;
     border-color: rgba(255, 255, 255, .5);
     transition: all 0.2s;
-    background: linear-gradient(100deg, rgba(255, 255, 255, .5), rgba(255, 255, 255, 0) 80%);
     animation: menuItemsComing 0.25s both cubic-bezier(.22,.61,.36,1);
 }
 
@@ -191,15 +183,9 @@ header.left-bar nav > ul > li > a:hover {
 /* content */
 
 div.page-content {
-    /*margin-left: 22%;*/
-    margin-left: 0;
+    margin-left: 22%;
     color: white;
     text-shadow: 0 0 1px rgba(0, 0, 0, .5), 1px 1px 1px rgba(0, 0, 0, .25), 0 0 20px rgba(0, 0, 0, 0.15);
-}
-
-div.page-content .content-b,
-div.page-content .content-footer {
-    padding-left: 22%;
 }
 
 .content-b {
