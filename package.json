@@ -1,0 +1,36 @@
+{
+  "name": "portfolio",
+  "version": "0.0.1",
+  "description": "A standard portfolio for learning purpose",
+  "private": true,
+  "browserify": {
+    "transform": [
+      "babelify",
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "react": "global:React",
+    "react-dom": "global:ReactDOM",
+    "react-router": "global:ReactRouter"
+  },
+  "peerDependencies": {
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "babelify": "^6.3.0",
+    "browserify": "^11.2.0",
+    "browserify-shim": "^3.8.10",
+    "grunt": "^0.4.5",
+    "grunt-babel": "^5.0.3",
+    "grunt-browserify": "^4.0.1",
+    "grunt-contrib-copy": "^0.8.1",
+    "grunt-contrib-htmlmin": "^0.5.0",
+    "node-waves": "0.7.4"
+  },
+  "scripts": {
+    "build": "npm run build-debug",
+    "build-debug": "grunt"
+  }
+}
