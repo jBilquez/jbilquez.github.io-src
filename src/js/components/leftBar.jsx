@@ -6,7 +6,12 @@ import {Link} from 'react-router';
 const LeftTitle = React.createClass({
 
     render() {
-        return (<h1>The Portfolio</h1>);
+        return (
+            <Link id="logo" to="/home" title="Retourner à la page d'accueil">
+                <img src="img/logo64.png" alt="J. Bilquez logo" />
+                <h1>J. Bilquez - Portfolio</h1>
+            </Link>
+        );
     }
 
 });
