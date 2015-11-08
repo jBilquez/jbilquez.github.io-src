@@ -50,13 +50,16 @@
         <script src="js/app.js"></script>
 
         <script>
+        var ie = navigator.userAgent.match(/MSIE 10/i) || navigator.userAgent.match(/Trident\/7\./) || navigator.userAgent.match(/Edge\/12\./);
         (function () {
+
+            if (ie) $('body').addClass('ie');
 
             if ("ontouchstart" in window) {
                 document.documentElement.className = document.documentElement.className + ' touch';
             }
 
-            if (!$("html").hasClass('touch')) {
+            if (!$("html").hasClass('touch') && !ie) {
                 $('.parallax').addClass('background-fixed');
             }
 
@@ -106,7 +109,7 @@
                     path.data("resized-imgW", imgW);
                     path.data("resized-imgH", imgH);
                     path.css("background-size", imgW + "px " + imgH + "px");
-                    
+
                     if ($('#portfolio-page').length > 0) {
                         path.hover(function () {
                             $(this).css("background-size", (imgW * 1.02) + "px " + (imgH * 1.02) + "px")
@@ -122,6 +125,9 @@
 
             /* set parallax background-position */
             function parallaxPosition(e) {
+                
+                if (ie) return;
+                
                 var heightWindow = $(window).height();
                 var topWindow = $(window).scrollTop();
                 var bottomWindow = topWindow + heightWindow;
@@ -155,7 +161,7 @@
                 $(window).scroll(parallaxPosition);
                 parallaxPosition();
             }
-
+            
         })();
         </script>
 

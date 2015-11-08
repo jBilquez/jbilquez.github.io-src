@@ -40,7 +40,7 @@ const Home = React.createClass({
                         <a 
                             className='button'
                             onClick={this.scrollDown}
-                        >&#8595; &nbsp; &nbsp; Découvrez qui je suis &nbsp; &nbsp; &#8595;</a>
+                        >&#8595; &nbsp; &nbsp; Découvrir qui je suis &nbsp; &nbsp; &#8595;</a>
                     </div>
 
                 </Background>
@@ -62,7 +62,7 @@ const Home = React.createClass({
                         <Link 
                             className='button'
                             to="/portfolio"
-                        >Découvrir mon Portfolio</Link>
+                        >Voir mon Portfolio</Link>
                     </div>
                 </Background>
             </AppDiv>

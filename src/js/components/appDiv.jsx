@@ -47,6 +47,8 @@ export class Background extends Component {
 
         let { className, type, image, color, fullscreen, style, ...props } = this.props;
 
+        var ie = navigator.userAgent.match(/MSIE 10/i) || navigator.userAgent.match(/Trident\/7\./) || navigator.userAgent.match(/Edge\/12\./);
+
         switch (type) {
 
             case 'background':
@@ -63,7 +65,7 @@ export class Background extends Component {
             case 'parallax':
 
                 className += ' background parallax';
-                if (document.documentElement.className.indexOf('touch') === -1) className += ' background-fixed';
+                if (!ie && document.documentElement.className.indexOf('touch') === -1) className += ' background-fixed';
 
                 break;
 
