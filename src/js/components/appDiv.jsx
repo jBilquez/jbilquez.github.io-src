@@ -31,7 +31,8 @@ export class Background extends Component {
         image: React.PropTypes.string,
         background: React.PropTypes.string,
         fullscreen: React.PropTypes.bool,
-        style: React.PropTypes.object
+        style: React.PropTypes.object,
+        viewable: React.PropTypes.bool
     }
 
     static defaultProps = {
@@ -40,12 +41,22 @@ export class Background extends Component {
         image: '',
         color: 'white',
         fullscreen: true,
-        style: {}
+        style: {},
+        viewable: false
+    }
+
+    static contextTypes = {
+        router: React.PropTypes.func
+    }
+
+    handleClick() {
+        if (!this.props.viewable) return;
+        this.context.router.transitionTo('/view/' + this.props.image.substring(this.props.image.lastIndexOf('/') + 1));
     }
 
     render() {
 
-        let { className, type, image, color, fullscreen, style, ...props } = this.props;
+        let { className, type, image, color, fullscreen, style, viewable, ...props } = this.props;
 
         var ie = navigator.userAgent.match(/MSIE 10/i) || navigator.userAgent.match(/Trident\/7\./) || navigator.userAgent.match(/Edge\/12\./);
 
@@ -87,6 +98,7 @@ export class Background extends Component {
             <AppDiv
                 className={className}
                 style={style}
+                onClick={this.handleClick.bind(this)}
                 {...props}
                 >
                 

@@ -27,7 +27,7 @@ const Home = React.createClass({
                     image='img/Accueil01.jpg'
                     data-img-width='1920'
                     data-img-height='1280'
-                    data-diff='200'
+                    data-diff='400'
                 >
                     <div className='content-a'>
                         <div className='content-b'>
