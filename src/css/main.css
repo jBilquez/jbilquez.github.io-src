@@ -17,6 +17,51 @@ html, body {
     height: 100%;
 }
 
+.parallax-container {
+    height: 100vh;
+    perspective: 1px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.parallax-container .background.parallax {
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+}
+
+.parallax-container .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 50vh 0;
+}
+
+.parallax-container .layer.back {
+    transform: translateZ(-1px) scale(2);
+    background-size: cover;
+}
+
+.parallax-container .layer.front {
+    transform: translateZ(0);
+}
+
+.parallax-container .layer .content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-left: 1%;
+}
+
+.parallax-container .layer .content .footer {
+    position: relative;
+    bottom: -20vh;
+}
+
 .background {
     background-repeat:no-repeat;
     background-position:100% 50%;
@@ -227,7 +272,7 @@ header.left-bar nav > ul > li > a:hover {
 /* content */
 
 div.page-content {
-    /*margin-left: 22%;*/
+    margin-left: 21%;
     color: white;
     text-shadow: 0 0 1px rgba(0, 0, 0, .65), 1px 1px 1px rgba(0, 0, 0, .30), 0 0 20px rgba(0, 0, 0, 0.25);
 }

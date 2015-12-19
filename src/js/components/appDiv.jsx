@@ -57,8 +57,7 @@ export class Background extends Component {
     render() {
 
         let { className, type, image, color, fullscreen, style, viewable, ...props } = this.props;
-
-        var ie = navigator.userAgent.match(/MSIE 10/i) || navigator.userAgent.match(/Trident\/7\./) || navigator.userAgent.match(/Edge\/12\./);
+        let background;
 
         switch (type) {
 
@@ -75,8 +74,9 @@ export class Background extends Component {
 
             case 'parallax':
 
-                className += ' background parallax';
-                if (!ie && document.documentElement.className.indexOf('touch') === -1) className += ' background-fixed';
+                className += ' background parallax background-fixed';
+                
+                if (!image) className += ' not-background';
 
                 break;
 
@@ -90,20 +90,31 @@ export class Background extends Component {
         style.backgroundColor = color;
         if (image) {
             style.backgroundImage = 'url(' + image + ')';
+            background = (
+                <div
+                    className='layer back'
+                    style={style}>
+                </div>
+            );
+            style = {};
         } else {
+            style.backgroundColor = color;
             style.backgroundImage = 'none';
         }
 
         return (
-            <AppDiv
+            <div
                 className={className}
-                style={style}
                 onClick={this.handleClick.bind(this)}
-                {...props}
-                >
+                {...props}>
                 
-                {this.props.children}
-            </AppDiv>
+                {background}
+        
+                <div className='layer front' style={style}>
+                    <div className='content'>{this.props.children}</div>
+                </div>
+                
+            </div>
         );
     }
 
