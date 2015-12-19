@@ -69,34 +69,6 @@ const Home = React.createClass({
         );
     },
 
-/*
- * 
-
-                <div id='intro'>
-                    <div className='content-a'><div className='content-b'>
-                        <h2>Jérôme Bilquez</h2>
-                        <h3>Graphiste 3D en architecture</h3>
-                        <p>
-                            Je suis Jérôme Bilquez, graphiste 3D, spécialisé
-                            dans les images de synthèses et
-                            illustrations architecturales.
-                        
-                            Ma mission est de vous accompagner dans la 
-                            mise en image de vos projets à l'aide de visuels
-                            flatteurs et de hautes qualités.
-                        </p>
-                    </div></div>
-                    <div className='content-footer'>
-                        <Link 
-                            className='button'
-                            to="/portfolio"
-                        >Voir mon Portfolio</Link>
-                    </div>
-                </div>
- * 
- * 
- */
-
     statics: {
         willTransitionFrom: function (transition, element) {
             if (!$('#home-page').hasClass('leaving')) {
