@@ -30,7 +30,7 @@ const Home = React.createClass({
                     <h2>Jérôme Bilquez</h2>
                     <h3>Portfolio</h3>
                     
-                    <div className='footer'>
+                    <div id='who-i-am-button'>
                         <a 
                             className='button'
                             onClick={this.scrollDown}
@@ -46,10 +46,9 @@ const Home = React.createClass({
                     type='parallax'
                     color='white'>
                             
-                    <h2>Jérôme Bilquez</h2>
                     <h3>Graphiste 3D en architecture</h3>
                     <p>
-                        Je suis Jérôme Bilquez, graphiste 3D, spécialisé
+                        Je suis <strong>Jérôme Bilquez</strong>, graphiste 3D, spécialisé
                         dans les images de synthèses et
                         illustrations architecturales.
 
@@ -58,7 +57,7 @@ const Home = React.createClass({
                         flatteurs et de hautes qualités.
                     </p>
 
-                    <div className='footer'>
+                    <div id='portfolio-button'>
                         <Link 
                             className='button'
                             to="/portfolio"
