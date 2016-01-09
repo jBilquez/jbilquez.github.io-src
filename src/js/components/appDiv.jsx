@@ -87,30 +87,31 @@ export class Background extends Component {
 
         if (!fullscreen) className += ' not-fullscreen';
 
-        style.backgroundColor = color;
+        let innerStyleBack = {}
+        let innerStyleFront =  {}
         if (image) {
-            style.backgroundImage = 'url(' + image + ')';
+            innerStyleBack.backgroundImage = 'url(' + image + ')';
             background = (
                 <div
                     className='layer back'
-                    style={style}>
+                    style={innerStyleBack}>
                 </div>
             );
-            style = {};
         } else {
-            style.backgroundColor = color;
-            style.backgroundImage = 'none';
+            innerStyleFront.backgroundColor = color;
+            innerStyleFront.backgroundImage = 'none';
         }
 
         return (
             <div
                 className={className}
                 onClick={this.handleClick.bind(this)}
+                style={style}
                 {...props}>
                 
                 {background}
         
-                <div className='layer front' style={style}>
+                <div className='layer front' style={innerStyleFront}>
                     <div className='content'>{this.props.children}</div>
                 </div>
                 
