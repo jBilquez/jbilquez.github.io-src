@@ -1,30 +1,6 @@
 import React, { Component } from 'react'
 
-export default class AppDiv extends Component {
-
-    static propTypes = {
-        className: React.PropTypes.string
-    }
-
-    static defaultProps = {
-        className: 'fullscreen'
-    }
-
-    render() {
-
-        let { className, ...props } = this.props;
-        if (className.indexOf('fullscreen') == -1) className += ' fullscreen';
-
-        return (
-            <div className={className} {...props}>
-                {this.props.children}
-            </div>
-        );
-    }
-
-}
-
-export class Background extends Component {
+export default class Background extends Component {
 
     static propTypes = {
         type: React.PropTypes.string,
@@ -50,6 +26,7 @@ export class Background extends Component {
     }
 
     handleClick() {
+        return;
         if (!this.props.viewable) return;
         this.context.router.transitionTo('/view/' + this.props.image.substring(this.props.image.lastIndexOf('/') + 1));
     }
@@ -112,7 +89,7 @@ export class Background extends Component {
                 {background}
         
                 <div className='layer front' style={innerStyleFront}>
-                    <div className='content'>{this.props.children}</div>
+                    {this.props.children}
                 </div>
                 
             </div>

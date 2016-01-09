@@ -1,7 +1,7 @@
 /* home.jsx */
 
 import React from 'react';
-import AppDiv, {Background} from './appDiv.jsx';
+import Background from './background.jsx';
 import {Link} from 'react-router';
 
 const Home = React.createClass({
@@ -26,17 +26,17 @@ const Home = React.createClass({
                     type='parallax'
                     image='img/Accueil01.jpg'
                 >
+                    <div className='content'>
+                        <h2>Jérôme Bilquez</h2>
+                        <h3>Portfolio</h3>
                     
-                    <h2>Jérôme Bilquez</h2>
-                    <h3>Portfolio</h3>
-                    
-                    <div id='who-i-am-button'>
-                        <a 
-                            className='button'
-                            onClick={this.scrollDown}
-                        >&#8595; &nbsp; &nbsp; Découvrir qui je suis &nbsp; &nbsp; &#8595;</a>
+                        <div id='who-i-am-button'>
+                            <a 
+                                className='button'
+                                onClick={this.scrollDown}
+                            >&#8595; &nbsp; &nbsp; Découvrir qui je suis &nbsp; &nbsp; &#8595;</a>
+                        </div>
                     </div>
-
                     
 
                 </Background>
@@ -45,25 +45,26 @@ const Home = React.createClass({
                     id='intro'
                     type='parallax'
                     color='white'>
-                            
-                    <h3>Graphiste 3D en architecture</h3>
-                    <p>
-                        Je suis <strong>Jérôme Bilquez</strong>, graphiste 3D, spécialisé
-                        dans les images de synthèses et
-                        illustrations architecturales.
+                       
+                    <div className='content'>
+                        <h3>Graphiste 3D en architecture</h3>
+                        <p>
+                            Je suis <strong>Jérôme Bilquez</strong>, graphiste 3D, spécialisé
+                            dans les images de synthèses et
+                            illustrations architecturales.
 
-                        Ma mission est de vous accompagner dans la 
-                        mise en image de vos projets à l'aide de visuels
-                        flatteurs et de hautes qualités.
-                    </p>
+                            Ma mission est de vous accompagner dans la 
+                            mise en image de vos projets à l'aide de visuels
+                            flatteurs et de hautes qualités.
+                        </p>
 
-                    <div id='portfolio-button'>
-                        <Link 
-                            className='button'
-                            to="/portfolio"
-                        >Voir mon Portfolio</Link>
+                        <div id='portfolio-button'>
+                            <Link 
+                                className='button'
+                                to="/portfolio"
+                            >Voir mon Portfolio</Link>
+                        </div>
                     </div>
-            
                 </Background>
             </div>
         );

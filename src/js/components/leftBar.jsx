@@ -23,6 +23,8 @@ const LeftMenu = React.createClass({
                 <ul>
                     <li><Link to='/home'>Accueil</Link></li>
                     <li><Link to='/portfolio'>Portfolio</Link></li>
+                    <li><Link to='/references'>Références</Link></li>
+                    <li><Link to='/contact'>Contact</Link></li>
                 </ul>
             </nav>
         );
