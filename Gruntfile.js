@@ -18,9 +18,13 @@ grunt.initConfig({
                 except: ['React', 'ReactDom', 'ReactRouter']
             }
         },
-        dist: {
+        react: {
             files: {
                 'dist/js/react-package.js': ['src/js/lib/react.0.14.7.js', 'src/js/lib/react-dom.0.14.7.js', 'src/js/lib/ReactRouter.2.0.1.js'],
+            }
+        },
+        app: {
+            files: {
                 'dist/js/app.min.js': ['dist/js/app.js']
             }
         }
@@ -94,7 +98,7 @@ grunt.loadNpmTasks('grunt-contrib-htmlmin');
 grunt.loadNpmTasks('grunt-contrib-uglify');
 
 
-grunt.registerTask("default", ["copy:dist", "browserify:dist", "htmlmin:dist"]);
-grunt.registerTask("uglify-react", ["uglify"]);
+grunt.registerTask("default", ["copy:dist", "browserify:dist", "htmlmin:dist", "uglify:app"]);
+grunt.registerTask("uglify-react", ["uglify:react"]);
 
 };

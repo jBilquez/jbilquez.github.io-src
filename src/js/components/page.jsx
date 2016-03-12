@@ -1,8 +1,6 @@
 /* page.jsx */
 
 import React from 'react';
-import {RouteHandler} from 'react-router';
-
 import LeftBar from './leftBar.jsx';
 
 const Page = React.createClass({

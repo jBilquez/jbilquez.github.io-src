@@ -1,6 +1,6 @@
 /* appRoutes.jsx */
 
-import {Router, Route, Redirect, IndexRoute} from 'react-router';
+import {Route, IndexRoute} from 'react-router';
 
 import Page from './components/page.jsx';
 import Home from './components/home.jsx';

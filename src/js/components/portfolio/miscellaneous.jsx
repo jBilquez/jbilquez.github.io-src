@@ -2,7 +2,6 @@
 
 import React from 'react';
 import Background from '../background.jsx';
-import {Link} from 'react-router';
 
 const PortfolioMiscellaneous = React.createClass({
 
