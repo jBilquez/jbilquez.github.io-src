@@ -24,7 +24,6 @@ const LeftMenu = React.createClass({
     },
 
     portfolioClicked() {
-        console.log("portfolioMenu clicked");
         this.setState({portfolioFolded: !this.state.portfolioFolded});
         return false;
     },
@@ -36,7 +35,7 @@ const LeftMenu = React.createClass({
                 <ul>
                     <li><Link to='/home'>Accueil</Link></li>
                     <li className={portfolioFoldedClass}>
-                        <a onClick={this.portfolioClicked.bind(this)}>Portfolio</a>
+                        <a onClick={this.portfolioClicked}>Portfolio</a>
                         <ul className={portfolioFoldedClass}>
                             <li><Link to='/portfolio/logements'>Logements</Link></li>
                             <li><Link to='/portfolio/services-publiques'>Services Publiques</Link></li>

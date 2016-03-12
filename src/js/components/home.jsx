@@ -19,7 +19,20 @@ const Home = React.createClass({
         );
     },
 
+    getInitialState() {
+        return {
+            portfolioFolded: false
+        }
+    },
+
+    portfolioClicked() {
+        this.setState({portfolioFolded: !this.state.portfolioFolded});
+        return false;
+    },
+
     render() {
+        var portfolioFoldedClass = this.state.portfolioFolded ? "button visible" : "button";
+        
         return (
             <div className='parallax-container' id='home-page'>
                 <Background
@@ -58,11 +71,18 @@ const Home = React.createClass({
                             flatteurs et de hautes qualités.
                         </p>
 
-                        <div id='portfolio-button'>
-                            <Link 
-                                className='button'
-                                to="/portfolio"
-                            >Voir mon Portfolio</Link>
+                        <nav id='portfolio-button'>
+                            <div 
+                                className={portfolioFoldedClass}
+                                onClick={this.portfolioClicked}
+                            >
+                                Voir mon Portfolio
+                                <ul>
+                                    <li><Link to="/portfolio/logements">Logements</Link></li>
+                                    <li><Link to="/portfolio/services-publiques">Services publiques</Link></li>
+                                    <li><Link to="/portfolio/autres">Autres</Link></li>
+                                </ul>
+                            </div>
                             <Link 
                                 className='button'
                                 to="/references"
@@ -71,7 +91,7 @@ const Home = React.createClass({
                                 className='button'
                                 to="/contact"
                             >Me contacter</Link>
-                        </div>
+                        </nav>
                     </div>
                 </Background>
             </div>

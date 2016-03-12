@@ -15,6 +15,13 @@ body {
 a {
     cursor: pointer;
 }
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
 /* background relative */
 
 html, body {
@@ -278,12 +285,12 @@ div.page-content .button {
     border: none;
     border-radius: 2px;
     display: inline-block;
-    height: 36px;
+    min-height: 36px;
     line-height: 36px;
     outline: none;
     padding: 0 2rem;
     text-transform: uppercase;
-    vertical-align: middle;
+    vertical-align: top;
     text-decoration: none;
     color: #333;
     background-color: #EBF6FA;
@@ -294,6 +301,13 @@ div.page-content .button {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     text-shadow: none;
     font-size: 0.75em;
+    max-height: 36px;
+    transition: max-height 250ms, box-shadow .2s, color .2s, background-color .2s;
+    overflow: hidden;
+}
+
+div.page-content .button.visible {
+    max-height: 350px;
 }
 
 div.page-content .button:hover {
@@ -303,6 +317,32 @@ div.page-content .button:hover {
     outline: none;
 }
 
+div.page-content .button ul {
+    line-height: 2em;
+}
+
+div.page-content .button li {
+    border-left: solid 5px transparent;
+    border-right: solid 5px transparent;
+    padding: 0 5px;
+    transition: all 0.2s;
+}
+
+div.page-content .button li:hover {
+    background-color: #EEE;
+    border-left-color: #505355;
+}
+
+div.page-content .button a {
+    color: #505355;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s;
+}
+
+div.page-content .button a:hover {
+    color: black;
+}
 /* home page */
 
 div#home-page {
@@ -353,7 +393,9 @@ div#home-page #intro .content p {
 }
 
 #portfolio-button {
-    padding: 3em 0;
+    padding: 3em 0 0;
+    height: 225px;
+    overflow: hidden;
 }
 
 #portfolio-button .button {
