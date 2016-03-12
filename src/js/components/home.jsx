@@ -63,6 +63,14 @@ const Home = React.createClass({
                                 className='button'
                                 to="/portfolio"
                             >Voir mon Portfolio</Link>
+                            <Link 
+                                className='button'
+                                to="/references"
+                            >Voir mes références</Link>
+                            <Link 
+                                className='button'
+                                to="/contact"
+                            >Me contacter</Link>
                         </div>
                     </div>
                 </Background>

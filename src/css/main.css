@@ -318,6 +318,14 @@ div#home-page .not-background h3 {
     margin-bottom: 2.5em;
 }
 
+div#home-page #intro .content {
+    width: 60%;
+}
+
+div#home-page #intro .content p {
+    padding: 0 8%
+}
+
 #who-i-am-button {
     position: relative;
     bottom: -25vh;
@@ -325,6 +333,10 @@ div#home-page .not-background h3 {
 
 #portfolio-button {
     padding: 3em 0;
+}
+
+#portfolio-button .button {
+    margin: auto 1em;
 }
 /* portfolio page */
 
