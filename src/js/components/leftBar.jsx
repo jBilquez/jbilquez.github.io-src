@@ -17,12 +17,32 @@ const LeftTitle = React.createClass({
 
 const LeftMenu = React.createClass({
 
+    getInitialState() {
+        return {
+            portfolioFolded: false
+        }
+    },
+
+    portfolioClicked() {
+        console.log("portfolioMenu clicked");
+        this.setState({portfolioFolded: !this.state.portfolioFolded});
+        return false;
+    },
+
     render() {
+        var portfolioFoldedClass = this.state.portfolioFolded ? "visible" : "";
         return (
             <nav>
                 <ul>
                     <li><Link to='/home'>Accueil</Link></li>
-                    <li><Link to='/portfolio'>Portfolio</Link></li>
+                    <li className={portfolioFoldedClass}>
+                        <a onClick={this.portfolioClicked.bind(this)}>Portfolio</a>
+                        <ul className={portfolioFoldedClass}>
+                            <li><Link to='/portfolio/logements'>Logements</Link></li>
+                            <li><Link to='/portfolio/services-publiques'>Services Publiques</Link></li>
+                            <li><Link to='/portfolio/autres'>Autres</Link></li>
+                        </ul>
+                    </li>
                     <li><Link to='/references'>Références</Link></li>
                     <li><Link to='/contact'>Contact</Link></li>
                 </ul>

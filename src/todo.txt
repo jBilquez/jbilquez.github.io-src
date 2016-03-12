@@ -2,7 +2,7 @@ x Ajouter des boutons références et contact sur la page d'accueil
 Placement des boutons de la page d'accueil +Responsive
 x Ajout de routes +Categories
 x Ajout de pages de +Catégories
-Ajout d'un sous-menu pour les +Catégories du portfolio
+x Ajout d'un sous-menu pour les +Catégories du portfolio
 Ajout d'un sous-menu sur le bouton de la page d'accueil pour les +Catégories
 Refactoriser pour rendre l'ajout de +Catégories plus facile
 Ajout de texte de copyright en bas de page des portfolios
