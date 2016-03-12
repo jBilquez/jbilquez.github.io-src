@@ -2,6 +2,30 @@ module.exports = function(grunt) {
 
 grunt.initConfig({
     "pkg": grunt.file.readJSON('package.json'),
+    "concat": {
+        options: {
+            separator: ';'
+        },
+        dist: {
+            src: ['src/js/lib/react.0.14.7.js', 'src/js/lib/react-dom.0.14.7.js', 'src/js/lib/ReactRouter.2.0.1.js'],
+            dest: 'dist/js/react-package.js'
+        }
+    },
+    
+    "uglify": {
+        options: {
+            mangle: {
+                except: ['React', 'ReactDom', 'ReactRouter']
+            }
+        },
+        dist: {
+            files: {
+                'dist/js/react-package.js': ['src/js/lib/react.0.14.7.js', 'src/js/lib/react-dom.0.14.7.js', 'src/js/lib/ReactRouter.2.0.1.js'],
+                'dist/js/app.min.js': ['dist/js/app.js']
+            }
+        }
+    },
+            
     "copy": {
         dist: {
             files: [
@@ -67,7 +91,10 @@ grunt.initConfig({
 grunt.loadNpmTasks('grunt-contrib-copy');
 grunt.loadNpmTasks('grunt-browserify');
 grunt.loadNpmTasks('grunt-contrib-htmlmin');
+grunt.loadNpmTasks('grunt-contrib-uglify');
+
 
 grunt.registerTask("default", ["copy:dist", "browserify:dist", "htmlmin:dist"]);
+grunt.registerTask("uglify-react", ["uglify"]);
 
 };

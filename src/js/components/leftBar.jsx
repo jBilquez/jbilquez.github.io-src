@@ -1,15 +1,15 @@
 /* leftBar.jsx */
 
 import React from 'react';
-import {Link} from 'react-router';
+import {Link, IndexLink} from 'react-router';
 
 const LeftTitle = React.createClass({
 
     render() {
         return (
-            <Link id="logo" to="/home" title="Retourner à la page d'accueil">
+            <IndexLink id="logo" to="/" title="Retourner à la page d'accueil">
                 <div id="logo-img" />
-            </Link>
+            </IndexLink>
         );
     }
 
@@ -33,17 +33,17 @@ const LeftMenu = React.createClass({
         return (
             <nav>
                 <ul>
-                    <li><Link to='/home'>Accueil</Link></li>
+                    <li><IndexLink to='/' activeClassName="active">Accueil</IndexLink></li>
                     <li className={portfolioFoldedClass}>
                         <a onClick={this.portfolioClicked}>Portfolio</a>
                         <ul className={portfolioFoldedClass}>
-                            <li><Link to='/portfolio/logements'>Logements</Link></li>
-                            <li><Link to='/portfolio/services-publiques'>Services Publiques</Link></li>
-                            <li><Link to='/portfolio/autres'>Autres</Link></li>
+                            <li><Link to='/portfolio/logements' activeClassName="active">Logements</Link></li>
+                            <li><Link to='/portfolio/services-publiques' activeClassName="active">Services Publiques</Link></li>
+                            <li><Link to='/portfolio/autres' activeClassName="active">Autres</Link></li>
                         </ul>
                     </li>
-                    <li><Link to='/references'>Références</Link></li>
-                    <li><Link to='/contact'>Contact</Link></li>
+                    <li><Link to='/references' activeClassName="active">Références</Link></li>
+                    <li><Link to='/contact' activeClassName="active">Contact</Link></li>
                 </ul>
             </nav>
         );

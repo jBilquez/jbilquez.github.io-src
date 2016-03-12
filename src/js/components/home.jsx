@@ -6,14 +6,10 @@ import {Link} from 'react-router';
 
 const Home = React.createClass({
 
-    contextTypes: {
-        router: React.PropTypes.func
-    },
-
     scrollDown() {
         window.setTimeout(
             function() {
-                $('#intro').velocity("scroll", {duration: 600, easing: "ease", container: $("#home-page")});
+                Velocity(document.getElementById('intro'), "scroll", {duration: 600, easing: "ease", container: document.getElementById("home-page")});
             },
             100
         );
@@ -98,21 +94,6 @@ const Home = React.createClass({
         );
     },
 
-    statics: {
-        willTransitionFrom: function (transition, element) {
-            if (!$('#home-page').hasClass('leaving')) {
-                $('#home-page').addClass('leaving');
-                transition.abort();
-
-                let delayTransition = function () {
-                    element.context.router.transitionTo(transition.path);
-                };
-
-                window.setTimeout(delayTransition, 200);
-                
-            }
-        }
-    }
 
 });
 

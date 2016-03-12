@@ -13,7 +13,7 @@ const Page = React.createClass({
             <div>
                 <LeftBar />
                 <div className="page-content">
-                    <RouteHandler />
+                    {this.props.children}
                 </div>
             </div>
         );

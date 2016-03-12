@@ -7,8 +7,7 @@ export default class Background extends Component {
         image: React.PropTypes.string,
         background: React.PropTypes.string,
         fullscreen: React.PropTypes.bool,
-        style: React.PropTypes.object,
-        viewable: React.PropTypes.bool
+        style: React.PropTypes.object
     }
 
     static defaultProps = {
@@ -17,23 +16,12 @@ export default class Background extends Component {
         image: '',
         color: 'white',
         fullscreen: true,
-        style: {},
-        viewable: false
-    }
-
-    static contextTypes = {
-        router: React.PropTypes.func
-    }
-
-    handleClick() {
-        return;
-        if (!this.props.viewable) return;
-        this.context.router.transitionTo('/view/' + this.props.image.substring(this.props.image.lastIndexOf('/') + 1));
+        style: {}
     }
 
     render() {
 
-        let { className, type, image, color, fullscreen, style, viewable, ...props } = this.props;
+        let { className, type, image, color, fullscreen, style, ...props } = this.props;
         let background;
 
         switch (type) {
@@ -82,7 +70,6 @@ export default class Background extends Component {
         return (
             <div
                 className={className}
-                onClick={this.handleClick.bind(this)}
                 style={style}
                 {...props}>
                 

@@ -6,14 +6,10 @@ import {Link} from 'react-router';
 
 const PortfolioHousing = React.createClass({
 
-    contextTypes: {
-        router: React.PropTypes.func
-    },
-
     scrollDown(destination) {
         window.setTimeout(
             function() {
-                $('#' + destination).velocity("scroll", {duration: 600, easing: "ease", container: $("#portfolio-page")});
+                Velocity(document.getElementById(destination), "scroll", {duration: 600, easing: "ease", container: document.getElementById("portfolio-page")});
             },
             100
         );
@@ -27,8 +23,7 @@ const PortfolioHousing = React.createClass({
                     type='background'
                     fullscreen={false}
                     color='white'
-                    image='img/portfolio/wip/projet_01.jpg'
-                    viewable={true}>
+                    image='img/portfolio/wip/projet_01.jpg'>
     
                     <div className='portfolio-content'>
                     
@@ -56,8 +51,7 @@ const PortfolioHousing = React.createClass({
                     style={{zIndex: 2}}
                     type='parallax'
                     fullscreen={false}
-                    image='img/portfolio/03_Cirque_Galerie_Parade_03.jpg'
-                    viewable={true}>
+                    image='img/portfolio/03_Cirque_Galerie_Parade_03.jpg'>
 
                     <div className='portfolio-content discreet right'>
                     
@@ -77,8 +71,7 @@ const PortfolioHousing = React.createClass({
                     type='background'
                     fullscreen={false}
                     color='white'
-                    image='img/portfolio/wip/projet_02.jpg'
-                    viewable={true}>
+                    image='img/portfolio/wip/projet_02.jpg'>
                             
                     <div className='portfolio-content right top'>
                     
@@ -104,8 +97,7 @@ const PortfolioHousing = React.createClass({
                     style={{zIndex: 1}}
                     type='parallax'
                     fullscreen={false}
-                    image='img/portfolio/Chartres_BoisParis-Terrasse_03.jpg'
-                    viewable={true}>
+                    image='img/portfolio/Chartres_BoisParis-Terrasse_03.jpg'>
                             
                     <div className='portfolio-content discreet right'>
                     
@@ -125,8 +117,7 @@ const PortfolioHousing = React.createClass({
                     type='background'
                     fullscreen={false}
                     color='white'
-                    image='img/portfolio/wip/projet_03.jpg'
-                    viewable={true}>
+                    image='img/portfolio/wip/projet_03.jpg'>
 
                     <div className='portfolio-content top'>
                     
@@ -152,8 +143,7 @@ const PortfolioHousing = React.createClass({
                     style={{zIndex: 1}}
                     type='parallax'
                     fullscreen={false}
-                    image='img/portfolio/Toulouse_Clinique_Terrasse_02.jpg'
-                    viewable={true}>
+                    image='img/portfolio/Toulouse_Clinique_Terrasse_02.jpg'>
             
                 </Background>
         
@@ -161,30 +151,12 @@ const PortfolioHousing = React.createClass({
                     style={{zIndex: 2, height: '50vh',opacity:0, boxShadow:'none'}}
                     type='background'
                     fullscreen={false}
-                    color='white'
-                    viewable={true}>
+                    color='white'>
 
                 </Background>
 
            </div>
         );
-    },
-
-    statics: {
-        willTransitionFrom: function (transition, element) {
-
-            if (!$('#portfolio-page').hasClass('leaving')) {
-                $('#portfolio-page').addClass('leaving');
-                transition.abort();
-
-                let delayTransition = function () {
-                    element.context.router.transitionTo(transition.path);
-                };
-
-                window.setTimeout(delayTransition, 200);
-
-            }
-        }
     }
 });
 
