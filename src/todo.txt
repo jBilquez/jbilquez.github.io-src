@@ -6,8 +6,10 @@ x Ajout d'un sous-menu pour les +Catégories du portfolio
 x Ajout d'un sous-menu sur le bouton de la page d'accueil pour les +Catégories
 Refactoriser pour rendre l'ajout de +Catégories plus facile
 x Ajout de texte de copyright en bas de page des portfolios
-Ajout de la route et de la page des +Références
+x Ajout de la route et de la page des +Références
 Construire la page +Références
 Ajout de la route et de la page de +Contact
 Ajout d'un formulaire de +Contact
-Merge la branche sur le master
+x Merge la branche sur le master
+Reorganiser arborescence (ajout components/pages, et différenciation pages / composants)
++Optimisation de la css

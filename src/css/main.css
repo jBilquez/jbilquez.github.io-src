@@ -491,6 +491,15 @@ div.portfolio-content a.button {
     color: #333;
 }
 
+/* references pages */
+
+div#references-page {
+    opacity: 0;
+    animation: contentComing 0.2s both cubic-bezier(.22, .61, .36, 1) 0s;
+}
+
+/* common */
+
 @keyframes contentComing {
     0% {
         opacity: 0;
