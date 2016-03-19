@@ -22,6 +22,10 @@ ul {
     list-style-type: none;
 }
 
+img {
+    background-color: white;
+}
+
 /* background relative */
 
 html, body {
@@ -347,6 +351,7 @@ div.page-content .button a:hover {
 
 div#home-page {
     opacity: 0;
+    transform: translateY(-2em);
     animation: contentComing 0.2s both cubic-bezier(.22, .61, .36, 1) 0s;
 }
 
@@ -410,6 +415,7 @@ a.noLink {
 
 div#portfolio-page {
     opacity: 0;
+    transform: translateY(-2em);
     animation: contentComing 0.2s both cubic-bezier(.22, .61, .36, 1) 0s;
 }
 
@@ -495,6 +501,15 @@ div.portfolio-content a.button {
 
 div#references-page {
     opacity: 0;
+    transform: translateY(-2em);
+    animation: contentComing 0.2s both cubic-bezier(.22, .61, .36, 1) 0s;
+}
+
+/* contact pages */
+
+div#contact-page {
+    opacity: 0;
+    transform: translateY(-2em);
     animation: contentComing 0.2s both cubic-bezier(.22, .61, .36, 1) 0s;
 }
 
