@@ -472,6 +472,25 @@ div.portfolio-content a.button {
     float: right;
 }
 
+#portfolio-footer {
+    height: auto;
+    box-shadow: none;
+}
+
+#portfolio-footer .layer {
+    position: initial;
+}
+
+#portfolio-footer p {
+    margin: 0;
+    text-align: center;
+    text-shadow: none;
+    font-size: .75em;
+    line-height: 1.5em;
+    padding: 1em 5em 15vh;
+    color: #333;
+}
+
 @keyframes contentComing {
     0% {
         opacity: 0;

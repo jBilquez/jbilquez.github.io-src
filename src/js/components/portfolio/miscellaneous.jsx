@@ -147,10 +147,24 @@ const PortfolioMiscellaneous = React.createClass({
                 </Background>
         
                 <Background
-                    style={{zIndex: 2, height: '50vh',opacity:0, boxShadow:'none'}}
+                    style={{zIndex: 2, height: '40vh',opacity:0, boxShadow:'none'}}
                     type='background'
                     fullscreen={false}
                     color='white'>
+
+                </Background>
+        
+                <Background
+                    id='portfolio-footer'
+                    style={{zIndex: 2}}
+                    type='background'
+                    fullscreen={false}
+                    color='white'>
+                    
+                    <p>
+                        &copy; Ces images sont propriétés de leurs auteurs
+                        et ne peuvent être utilisées sans son accord &copy;
+                    </p>
 
                 </Background>
 
