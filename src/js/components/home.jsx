@@ -33,9 +33,9 @@ const Home = React.createClass({
             <div className='parallax-container' id='home-page'>
                 <Background
                     type='parallax'
-                    image='img/Accueil01.jpg'
+                    image='img/Accueil02.jpg'
                 >
-                    <div className='content'>
+                    <div className='content' id='home-title'>
                         <h2>Jérôme Bilquez</h2>
                         <h3>Portfolio</h3>
                     

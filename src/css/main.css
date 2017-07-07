@@ -347,6 +347,56 @@ div.page-content .button a {
 div.page-content .button a:hover {
     color: black;
 }
+
+div.content-left {
+    width: 35%; 
+    margin-left: 5%;
+    float: left;
+    font-size: .75em;
+    margin-top: 20%;
+}
+
+div.content-left article {
+    text-align: right;
+}
+
+div.content-left h1 {
+    margin-top: 0;
+}
+
+div.content-right {
+    width: 55%;
+    margin-left: 5%;
+    float: right;
+    margin-top: 20%;
+}
+
+div.content-right form p {
+    margin-top: 0;
+    line-height: initial;
+}
+
+div.content-right form input,
+div.content-right form textarea {
+    font-size: .75em;
+    padding: 5px;
+    width: 80%;
+    border: solid 1px #666;
+    border-radius: 0;
+    background: transparent;
+    color: #333;
+}
+
+div.content-right form input[type=submit] {
+    width: auto;
+    float: right;
+    margin-right: 20%;
+}
+
+input[placeholder], [placeholder], *[placeholder] {
+    color: #666;
+}
+
 /* home page */
 
 div#home-page {
@@ -392,9 +442,17 @@ div#home-page #intro .content p {
     padding: 0 8%
 }
 
+#home-title {
+    top: 38%;
+}
+
+#home-title h2, #home-title h3 {
+    font-family: 'Julius Sans One', 'Roboto', sans-serif;
+}
+
 #who-i-am-button {
     position: relative;
-    bottom: -25vh;
+    bottom: -38vh;
 }
 
 #portfolio-button {

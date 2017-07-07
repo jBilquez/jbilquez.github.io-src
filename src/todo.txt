@@ -13,3 +13,6 @@ Ajout d'un formulaire de +Contact
 x Merge la branche sur le master
 Reorganiser arborescence (ajout components/pages, et différenciation pages / composants)
 +Optimisation de la css
++Responsive design (à détailler)
++Optimisation du chargement des images (pre-loader ? FLIF - Free Lossless Image Format ?) (à détailler)
++Optimisation : autre (à détailler)
