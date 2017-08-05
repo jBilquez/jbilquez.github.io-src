@@ -24,7 +24,7 @@ export default React.createClass({
                 
                 </div>
                 <div className='content-right'>
-                    <form method='POST' action='http://localhost:4567/'>
+                    <form method='POST' action='https://safe-tor-51141.herokuapp.com/'>
                         <p>
                             <input 
                                 type='text' 
