@@ -16,7 +16,7 @@ export default (
         <Route path="portfolio">
             <Route path="logements" component={PortfolioHousing} />
             <Route path="autres" component={PortfolioMiscellaneous} />
-            <Route path="services-publiques" component={PortfolioPublicService} />
+            <Route path="services-publics" component={PortfolioPublicService} />
         </Route>
         <Route path="references" component={References} />
         <Route path="contact" component={Contact} />

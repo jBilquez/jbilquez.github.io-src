@@ -24,7 +24,7 @@ export default React.createClass({
                 
                 </div>
                 <div className='content-right'>
-                    <form>
+                    <form method='POST' action='http://localhost:4567/'>
                         <p>
                             <input 
                                 type='text' 

@@ -17,27 +17,72 @@ const PortfolioMiscellaneous = React.createClass({
     render() {
         return (
             <div className='parallax-container' id='portfolio-page'>
+                                    
                 <Background
+                    id='etalans'
+                    style={{zIndex: 2}}
+                    type='background'
+                    fullscreen={false}
+                    color='white'
+                    image='img/portfolio/autres/Etalans_Blanc_01.jpg'>
+                            
+                    <div className='portfolio-content top'>
+                    
+                        <h2>Établissement pour service d'aide par le travail</h2>
+                        <h3>Étalans</h3>
+
+                        <p>
+                            Projet Lauréat - Philippe DONZÉ
+                        </p>
+
+                        <a 
+                            className='button'
+                            onClick={this.scrollDown.bind(this, 'etalans-final-render')}>
+                            &#8595; &nbsp; &nbsp; Découvrir le rendu final &nbsp; &nbsp; &#8595;
+                        </a>
+                
+                    </div>
+                            
+                </Background>
+
+                <Background
+                    id='etalans-final-render'
+                    style={{zIndex: 1}}
+                    type='parallax'
+                    fullscreen={false}
+                    image='img/portfolio/autres/Etalans_Vue02_02a.jpg'>
+                            
+                    <div className='portfolio-content discreet right'>
+                    
+                        <a 
+                            className='button'
+                            onClick={this.scrollDown.bind(this, 'bayer')}>
+                            &#8595; &nbsp; &nbsp; Suivant &nbsp; &nbsp; &#8595;
+                        </a>
+                
+                    </div>
+                            
+                </Background>
+        
+                <Background
+                    id='bayer'
                     style={{zIndex: 3}}
                     type='background'
                     fullscreen={false}
                     color='white'
-                    image='img/portfolio/wip/projet_01.jpg'>
+                    image='img/portfolio/autres/Bayer_blanc_01.jpg'>
                             
-                    <div className='portfolio-content'>
+                    <div className='portfolio-content top right'>
                     
-                        <h2>Divers</h2>
-                        <h3>Non, Miscellaneous! :o</h3>
-
+                        <h2>Laboratoire Bayer</h2>
+                        <h3>Lyon</h3>
                         <p>
-                            Age of Empires is a series of personal 
-                            computer games developed by Ensemble Studios 
-                            and published by Microsoft Studios.
+                            Création d'un hall d'accueil
                         </p>
 
                         <a 
                             className='button'
-                            onClick={this.scrollDown.bind(this, 'picture1')}>
+                            onClick={this.scrollDown.bind(this, 'bayer-final-render')}>
                             &#8595; &nbsp; &nbsp; Découvrir le rendu final &nbsp; &nbsp; &#8595;
                         </a>
                 
@@ -46,104 +91,13 @@ const PortfolioMiscellaneous = React.createClass({
                 </Background>
             
                 <Background
-                    id='picture1'
+                    id='bayer-final-render'
                     style={{zIndex: 2}}
                     type='parallax'
                     fullscreen={false}
-                    image='img/portfolio/03_Cirque_Galerie_Parade_03.jpg'>
+                    image='img/portfolio/autres/Bayer_Interieure_02a.jpg'>
                             
-                    <div className='portfolio-content discreet right'>
-                    
-                        <a 
-                            className='button'
-                            onClick={this.scrollDown.bind(this, 'chapter2')}>
-                            &#8595; &nbsp; &nbsp; Suivant &nbsp; &nbsp; &#8595;
-                        </a>
-                
-                    </div>
 
-                </Background>
-                    
-                <Background
-                    id='chapter2'
-                    style={{zIndex: 2}}
-                    type='background'
-                    fullscreen={false}
-                    color='white'
-                    image='img/portfolio/wip/projet_02.jpg'>
-                            
-                    <div className='portfolio-content right top'>
-                    
-                        <h2>Wololo</h2>
-
-                        <p>
-                            Age of Empires is a series of personal 
-                            computer games developed by Ensemble Studios.
-                        </p>
-
-                        <a 
-                            className='button'
-                            onClick={this.scrollDown.bind(this, 'picture2')}>
-                            &#8595; &nbsp; &nbsp; Découvrir le rendu final &nbsp; &nbsp; &#8595;
-                        </a>
-                
-                    </div>
-                            
-                </Background>
-
-                <Background
-                    id='picture2'
-                    style={{zIndex: 1}}
-                    type='parallax'
-                    fullscreen={false}
-                    image='img/portfolio/Chartres_BoisParis-Terrasse_03.jpg'>
-                            
-                    <div className='portfolio-content discreet right'>
-                    
-                        <a 
-                            className='button'
-                            onClick={this.scrollDown.bind(this, 'chapter3')}>
-                            &#8595; &nbsp; &nbsp; Suivant &nbsp; &nbsp; &#8595;
-                        </a>
-                
-                    </div>
-                            
-                </Background>
-
-                <Background
-                    id='chapter3'
-                    style={{zIndex: 2}}
-                    type='background'
-                    fullscreen={false}
-                    color='white'
-                    image='img/portfolio/wip/projet_03.jpg'>
-
-                    <div className='portfolio-content top'>
-                    
-                        <h2>Wololo</h2>
-
-                        <p>
-                            Age of Empires is a series of personal 
-                            computer games developed by Ensemble Studios.
-                        </p>
-
-                        <a 
-                            className='button'
-                            onClick={this.scrollDown.bind(this, 'picture3')}>
-                            &#8595; &nbsp; &nbsp; Découvrir le rendu final &nbsp; &nbsp; &#8595;
-                        </a>
-                
-                    </div>
-
-                </Background>
-
-                <Background
-                    id='picture3'
-                    style={{zIndex: 1}}
-                    type='parallax'
-                    fullscreen={false}
-                    image='img/portfolio/Toulouse_Clinique_Terrasse_02.jpg'>
-            
                 </Background>
         
                 <Background

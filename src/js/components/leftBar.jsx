@@ -38,11 +38,10 @@ const LeftMenu = React.createClass({
                         <a onClick={this.portfolioClicked}>Portfolio</a>
                         <ul className={portfolioFoldedClass}>
                             <li><Link to='/portfolio/logements' activeClassName="active">Logements</Link></li>
-                            <li><Link to='/portfolio/services-publiques' activeClassName="active">Services Publiques</Link></li>
+                            <li><Link to='/portfolio/services-publics' activeClassName="active">Services Publics</Link></li>
                             <li><Link to='/portfolio/autres' activeClassName="active">Autres</Link></li>
                         </ul>
                     </li>
-                    <li><Link to='/references' activeClassName="active">Références</Link></li>
                     <li><Link to='/contact' activeClassName="active">Contact</Link></li>
                 </ul>
             </nav>

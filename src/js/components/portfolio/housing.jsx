@@ -22,22 +22,19 @@ const PortfolioHousing = React.createClass({
                     type='background'
                     fullscreen={false}
                     color='white'
-                    image='img/portfolio/wip/projet_01.jpg'>
+                    image='img/portfolio/logements/Log.Pradelle_blanc_01.jpg'>
     
-                    <div className='portfolio-content'>
+                    <div className='portfolio-content top right'>
                     
-                        <h2>Logements</h2>
-                        <h3>Non, Housing! :o</h3>
+                        <h3>Clermont-Ferrand</h3>
 
                         <p>
-                            Age of Empires is a series of personal 
-                            computer games developed by Ensemble Studios 
-                            and published by Microsoft Studios.
+                            Vinci
                         </p>
 
                         <a 
                             className='button'
-                            onClick={this.scrollDown.bind(this, 'picture1')}>
+                            onClick={this.scrollDown.bind(this, 'pradelle-final-render')}>
                             &#8595; &nbsp; &nbsp; Découvrir le rendu final &nbsp; &nbsp; &#8595;
                         </a>
                 
@@ -46,106 +43,14 @@ const PortfolioHousing = React.createClass({
                 </Background>
             
                 <Background
-                    id='picture1'
+                    id='pradelle-final-render'
                     style={{zIndex: 2}}
                     type='parallax'
                     fullscreen={false}
-                    image='img/portfolio/03_Cirque_Galerie_Parade_03.jpg'>
-
-                    <div className='portfolio-content discreet right'>
-                    
-                        <a 
-                            className='button'
-                            onClick={this.scrollDown.bind(this, 'chapter2')}>
-                            &#8595; &nbsp; &nbsp; Suivant &nbsp; &nbsp; &#8595;
-                        </a>
-                
-                    </div>
-
-                </Background>
-                    
-                <Background
-                    id='chapter2'
-                    style={{zIndex: 2}}
-                    type='background'
-                    fullscreen={false}
-                    color='white'
-                    image='img/portfolio/wip/projet_02.jpg'>
-                            
-                    <div className='portfolio-content right top'>
-                    
-                        <h2>Wololo</h2>
-
-                        <p>
-                            Age of Empires is a series of personal 
-                            computer games developed by Ensemble Studios.
-                        </p>
-
-                        <a 
-                            className='button'
-                            onClick={this.scrollDown.bind(this, 'picture2')}>
-                            &#8595; &nbsp; &nbsp; Découvrir le rendu final &nbsp; &nbsp; &#8595;
-                        </a>
-                
-                    </div>
-                            
-                </Background>
-
-                <Background
-                    id='picture2'
-                    style={{zIndex: 1}}
-                    type='parallax'
-                    fullscreen={false}
-                    image='img/portfolio/Chartres_BoisParis-Terrasse_03.jpg'>
-                            
-                    <div className='portfolio-content discreet right'>
-                    
-                        <a 
-                            className='button'
-                            onClick={this.scrollDown.bind(this, 'chapter3')}>
-                            &#8595; &nbsp; &nbsp; Suivant &nbsp; &nbsp; &#8595;
-                        </a>
-                
-                    </div>
-                            
-                </Background>
-
-                <Background
-                    id='chapter3'
-                    style={{zIndex: 2}}
-                    type='background'
-                    fullscreen={false}
-                    color='white'
-                    image='img/portfolio/wip/projet_03.jpg'>
-
-                    <div className='portfolio-content top'>
-                    
-                        <h2>Wololo</h2>
-
-                        <p>
-                            Age of Empires is a series of personal 
-                            computer games developed by Ensemble Studios.
-                        </p>
-
-                        <a 
-                            className='button'
-                            onClick={this.scrollDown.bind(this, 'picture3')}>
-                            &#8595; &nbsp; &nbsp; Découvrir le rendu final &nbsp; &nbsp; &#8595;
-                        </a>
-                
-                    </div>
+                    image='img/portfolio/logements/Log.Pradelle_Vue02a.jpg'>
 
                 </Background>
 
-                <Background
-                    id='picture3'
-                    style={{zIndex: 1}}
-                    type='parallax'
-                    fullscreen={false}
-                    image='img/portfolio/Toulouse_Clinique_Terrasse_02.jpg'>
-            
-                </Background>
-        
                 <Background
                     style={{zIndex: 2, height: '40vh',opacity:0, boxShadow:'none'}}
                     type='background'

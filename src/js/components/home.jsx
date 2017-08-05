@@ -75,14 +75,10 @@ const Home = React.createClass({
                                 Voir mon Portfolio
                                 <ul>
                                     <li><Link to="/portfolio/logements">Logements</Link></li>
-                                    <li><Link to="/portfolio/services-publiques">Services publiques</Link></li>
+                                    <li><Link to="/portfolio/services-publics">Services publics</Link></li>
                                     <li><Link to="/portfolio/autres">Autres</Link></li>
                                 </ul>
                             </div>
-                            <Link 
-                                className='button'
-                                to="/references"
-                            >Voir mes références</Link>
                             <Link 
                                 className='button'
                                 to="/contact"

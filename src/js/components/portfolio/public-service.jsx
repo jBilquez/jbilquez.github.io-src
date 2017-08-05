@@ -22,22 +22,21 @@ const PortfolioPublicService = React.createClass({
                     type='background'
                     fullscreen={false}
                     color='white'
-                    image='img/portfolio/wip/projet_01.jpg'>
+                    image='img/portfolio/services_publics/Auxon_blanc_01.jpg'>
     
-                    <div className='portfolio-content'>
+                    <div className='portfolio-content top'>
                     
-                        <h2>Services publiques</h2>
-                        <h3>Non, public services! :o</h3>
+                        <h2>Complexe Sportif</h2>
+                        <h3>Les Auxons</h3>
 
                         <p>
-                            Age of Empires is a series of personal 
-                            computer games developed by Ensemble Studios 
-                            and published by Microsoft Studios.
+                            Extension du bâtiment existant et ajout d'un court
+                            de tennis couvert et tempéré - Philippe DONZÉ
                         </p>
 
                         <a 
                             className='button'
-                            onClick={this.scrollDown.bind(this, 'picture1')}>
+                            onClick={this.scrollDown.bind(this, 'auxon-final-render')}>
                             &#8595; &nbsp; &nbsp; Découvrir le rendu final &nbsp; &nbsp; &#8595;
                         </a>
                 
@@ -46,17 +45,17 @@ const PortfolioPublicService = React.createClass({
                 </Background>
             
                 <Background
-                    id='picture1'
+                    id='auxon-final-render'
                     style={{zIndex: 2}}
                     type='parallax'
                     fullscreen={false}
-                    image='img/portfolio/03_Cirque_Galerie_Parade_03.jpg'>
+                    image='img/portfolio/services_publics/Auxon_VueC_01a.jpg'>
 
                     <div className='portfolio-content discreet right'>
                     
                         <a 
                             className='button'
-                            onClick={this.scrollDown.bind(this, 'chapter2')}>
+                            onClick={this.scrollDown.bind(this, 'crouzet-migette')}>
                             &#8595; &nbsp; &nbsp; Suivant &nbsp; &nbsp; &#8595;
                         </a>
                 
@@ -65,25 +64,22 @@ const PortfolioPublicService = React.createClass({
                 </Background>
                     
                 <Background
-                    id='chapter2'
+                    id='crouzet-migette'
                     style={{zIndex: 2}}
                     type='background'
                     fullscreen={false}
                     color='white'
-                    image='img/portfolio/wip/projet_02.jpg'>
+                    image='img/portfolio/services_publics/Crouzet.Migette_blanc_01.jpg'>
                             
                     <div className='portfolio-content right top'>
                     
-                        <h2>Wololo</h2>
-
-                        <p>
-                            Age of Empires is a series of personal 
-                            computer games developed by Ensemble Studios.
-                        </p>
+                        <h2>Maison Communale</h2>
+                        <h3>Crouzet Migette</h3>
+                        <p>Philippe DONZÉ</p>
 
                         <a 
                             className='button'
-                            onClick={this.scrollDown.bind(this, 'picture2')}>
+                            onClick={this.scrollDown.bind(this, 'crouzet-migette-final-render')}>
                             &#8595; &nbsp; &nbsp; Découvrir le rendu final &nbsp; &nbsp; &#8595;
                         </a>
                 
@@ -92,17 +88,17 @@ const PortfolioPublicService = React.createClass({
                 </Background>
 
                 <Background
-                    id='picture2'
+                    id='crouzet-migette-final-render'
                     style={{zIndex: 1}}
                     type='parallax'
                     fullscreen={false}
-                    image='img/portfolio/Chartres_BoisParis-Terrasse_03.jpg'>
+                    image='img/portfolio/services_publics/Crouzet.Migette_Vue01a.jpg'>
                             
                     <div className='portfolio-content discreet right'>
                     
                         <a 
                             className='button'
-                            onClick={this.scrollDown.bind(this, 'chapter3')}>
+                            onClick={this.scrollDown.bind(this, 'groupe-scolaire-anatole')}>
                             &#8595; &nbsp; &nbsp; Suivant &nbsp; &nbsp; &#8595;
                         </a>
                 
@@ -111,25 +107,26 @@ const PortfolioPublicService = React.createClass({
                 </Background>
 
                 <Background
-                    id='chapter3'
+                    id='groupe-scolaire-anatole'
                     style={{zIndex: 2}}
                     type='background'
                     fullscreen={false}
                     color='white'
-                    image='img/portfolio/wip/projet_03.jpg'>
+                    image='img/portfolio/services_publics/Gr.Scolaire_Blanc_01.jpg'>
 
-                    <div className='portfolio-content top'>
+                    <div className='portfolio-content'>
                     
-                        <h2>Wololo</h2>
+                        <h2>Groupe Scolaire</h2>
+                        <h3>Lyon</h3>
 
                         <p>
-                            Age of Empires is a series of personal 
-                            computer games developed by Ensemble Studios.
+                            Création d'une nouvelle salle de restauration -
+                            Studio PYC
                         </p>
 
                         <a 
                             className='button'
-                            onClick={this.scrollDown.bind(this, 'picture3')}>
+                            onClick={this.scrollDown.bind(this, 'groupe-scolaire-anatole-final-render')}>
                             &#8595; &nbsp; &nbsp; Découvrir le rendu final &nbsp; &nbsp; &#8595;
                         </a>
                 
@@ -138,11 +135,58 @@ const PortfolioPublicService = React.createClass({
                 </Background>
 
                 <Background
-                    id='picture3'
+                    id='groupe-scolaire-anatole-final-render'
                     style={{zIndex: 1}}
                     type='parallax'
                     fullscreen={false}
-                    image='img/portfolio/Toulouse_Clinique_Terrasse_02.jpg'>
+                    image='img/portfolio/services_publics/Gr.Scolaire_Vue02a.jpg'>
+            
+                    <div className='portfolio-content discreet right'>
+                    
+                        <a 
+                            className='button'
+                            onClick={this.scrollDown.bind(this, 'mediatheque-les-fourgs')}>
+                            &#8595; &nbsp; &nbsp; Suivant &nbsp; &nbsp; &#8595;
+                        </a>
+                
+                    </div>
+            
+                </Background>
+        
+                <Background
+                    id='mediatheque-les-fourgs'
+                    style={{zIndex: 2}}
+                    type='background'
+                    fullscreen={false}
+                    color='white'
+                    image='img/portfolio/services_publics/Mediatheque_LesFourgs_Blanc_01.jpg'>
+
+                    <div className='portfolio-content right'>
+                    
+                        <h2>Mediathèque</h2>
+                        <h3>Les Fourgs</h3>
+
+                        <p>
+                            Réhabilitation d'un ancien presbytère en médiathèque
+                            et périscolaire - Philippe DONZÉ
+                        </p>
+
+                        <a 
+                            className='button'
+                            onClick={this.scrollDown.bind(this, 'mediatheque-les-fourgs-final-render')}>
+                            &#8595; &nbsp; &nbsp; Découvrir le rendu final &nbsp; &nbsp; &#8595;
+                        </a>
+                
+                    </div>
+
+                </Background>
+        
+                <Background
+                    id='mediatheque-les-fourgs-final-render'
+                    style={{zIndex: 1}}
+                    type='parallax'
+                    fullscreen={false}
+                    image='img/portfolio/services_publics/Mediatheque_LesFourgs_Vue01_06a.jpg'>
             
                 </Background>
         
