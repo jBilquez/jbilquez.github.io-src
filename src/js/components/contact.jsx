@@ -3,6 +3,62 @@
 import React from 'react';
 
 export default React.createClass({
+        
+    getInitialState() {
+        return {
+          processing: false
+        };
+    },
+    
+    getButtonLabel(isProcessing) {
+        if (isProcessing === undefined) {
+            isProcessing = this.state.processing;
+        }
+        
+        if (isProcessing) {
+            return 'Envoi en cours...';
+        }
+        
+        return 'Envoyer';
+    },
+        
+    handleSubmit(event) {
+        
+        event.preventDefault();
+        
+        console.log('try to send...');
+        
+        if (this.state.processing) {
+            console.log('already sending, aborting');
+            return;
+        }
+        
+        this.setState({
+            processing: true
+        });
+        
+        let form = event.target,
+            xhr  = new XMLHttpRequest()
+        ;
+        
+        xhr.onload = () => {
+            this.setState({
+                processing: false
+            });
+
+            if (xhr.status === 200) {
+                //Message envoyé
+                console.log('Message sent');
+            } else {
+                //Oops :/
+                console.log('message not sent :(');
+            }
+        };
+        
+        xhr.open("post", form.action);
+        xhr.send(new FormData(form));
+        
+    },
 
     render() {
 
@@ -24,7 +80,7 @@ export default React.createClass({
                 
                 </div>
                 <div className='content-right'>
-                    <form method='POST' action='https://safe-tor-51141.herokuapp.com/'>
+                    <form action="http://localhost:5000/" onSubmit={this.handleSubmit} id="contact-form">
                         <p>
                             <input 
                                 type='text' 
@@ -57,7 +113,7 @@ export default React.createClass({
                             </textarea>
                         </p>
                         <p>
-                            <input className='button' type='submit' value='Envoyer' />
+                            <input className='button' type='submit' value={this.getButtonLabel(this.state.processing)} disabled={this.state.processing} />
                         </p>
                     </form>
                 </div>

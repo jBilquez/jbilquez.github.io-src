@@ -314,7 +314,7 @@ div.page-content .button.visible {
     max-height: 350px;
 }
 
-div.page-content .button:hover {
+div.page-content .button:hover:enabled {
     background: white;
     color: black;
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -569,6 +569,16 @@ div#contact-page {
     opacity: 0;
     transform: translateY(-2em);
     animation: contentComing 0.2s both cubic-bezier(.22, .61, .36, 1) 0s;
+}
+
+form#contact-form input[type=submit] {
+    width: 200px
+}
+
+input[type=submit]:disabled {
+    color: #CCC;
+    cursor: not-allowed;
+    box-shadow: none;
 }
 
 /* common */
