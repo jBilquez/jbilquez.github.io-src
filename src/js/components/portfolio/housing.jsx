@@ -35,7 +35,7 @@ const PortfolioHousing = React.createClass({
                         <a 
                             className='button'
                             onClick={this.scrollDown.bind(this, 'pradelle-final-render')}>
-                            &#8595; &nbsp; &nbsp; Découvrir le rendu final &nbsp; &nbsp; &#8595;
+                            &#9660; &nbsp; &nbsp; Découvrir le rendu final &nbsp; &nbsp; &#9660;
                         </a>
                 
                     </div>
@@ -49,6 +49,53 @@ const PortfolioHousing = React.createClass({
                     fullscreen={false}
                     image='img/portfolio/logements/Log.Pradelle_Vue02a.jpg'>
 
+                    <div className='portfolio-content discreet right'>
+                    
+                        <a 
+                            className='button'
+                            onClick={this.scrollDown.bind(this, 'givors')}>
+                            &#9660; &nbsp; &nbsp; Suivant &nbsp; &nbsp; &#9660;
+                        </a>
+                
+                    </div>
+
+                </Background>
+
+
+
+
+
+
+                <Background
+                    id='givors'
+                    style={{zIndex: 2}}
+                    type='background'
+                    fullscreen={false}
+                    color='white'
+                    image='img/portfolio/logements/Log.Givors_Blanc_01.jpg'>
+                            
+                    <div className='portfolio-content right'>
+                    
+                        <h3>Givors</h3>
+                        <p>in-fine Architectes</p>
+
+                        <a 
+                            className='button'
+                            onClick={this.scrollDown.bind(this, 'givors-final-render')}>
+                            &#9660; &nbsp; &nbsp; Découvrir le rendu final &nbsp; &nbsp; &#9660;
+                        </a>
+                
+                    </div>
+                            
+                </Background>
+
+                <Background
+                    id='givors-final-render'
+                    style={{zIndex: 1}}
+                    type='parallax'
+                    fullscreen={false}
+                    image='img/portfolio/logements/Log.Givors_vue01.jpg'>
+                            
                 </Background>
 
                 <Background
@@ -67,7 +114,7 @@ const PortfolioHousing = React.createClass({
                     color='white'>
                     
                     <p>
-                        &copy; Ces images sont propriétés de leurs auteurs
+                        &copy; Ces images sont propriétés de leur auteur
                         et ne peuvent être utilisées sans son accord &copy;
                     </p>
 

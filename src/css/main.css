@@ -439,7 +439,10 @@ div#home-page #intro .content {
 }
 
 div#home-page #intro .content p {
-    padding: 0 8%
+    padding: 0 5%;
+    font-size: 0.7em;
+    line-height: 1.8em;
+    text-align: justify;
 }
 
 #home-title {
@@ -457,8 +460,7 @@ div#home-page #intro .content p {
 
 #portfolio-button {
     padding: 3em 0 0;
-    height: 225px;
-    overflow: hidden;
+    height: 100px;;
 }
 
 #portfolio-button .button {
@@ -579,6 +581,32 @@ input[type=submit]:disabled {
     color: #CCC;
     cursor: not-allowed;
     box-shadow: none;
+}
+
+form#contact-form .feedback {
+    color: #c09853;
+    text-shadow: none;
+    display: inline-block;
+    padding: 8px 14px;
+    border: solid 1px#fbeed5;
+    background-color: #fcf8e3;
+    border-radius: 4px;
+    font-size: .6em;
+    visibility: hidden;
+}
+
+form#contact-form .feedback.success {
+    color: #468847;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    visibility: visible;
+}
+
+form#contact-form .feedback.error {
+    color: #b94a48;
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    visibility: visible;
 }
 
 /* common */

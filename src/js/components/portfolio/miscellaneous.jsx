@@ -38,7 +38,7 @@ const PortfolioMiscellaneous = React.createClass({
                         <a 
                             className='button'
                             onClick={this.scrollDown.bind(this, 'etalans-final-render')}>
-                            &#8595; &nbsp; &nbsp; Découvrir le rendu final &nbsp; &nbsp; &#8595;
+                            &#9660; &nbsp; &nbsp; Découvrir le rendu final &nbsp; &nbsp; &#9660;
                         </a>
                 
                     </div>
@@ -57,7 +57,7 @@ const PortfolioMiscellaneous = React.createClass({
                         <a 
                             className='button'
                             onClick={this.scrollDown.bind(this, 'bayer')}>
-                            &#8595; &nbsp; &nbsp; Suivant &nbsp; &nbsp; &#8595;
+                            &#9660; &nbsp; &nbsp; Suivant &nbsp; &nbsp; &#9660;
                         </a>
                 
                     </div>
@@ -83,7 +83,7 @@ const PortfolioMiscellaneous = React.createClass({
                         <a 
                             className='button'
                             onClick={this.scrollDown.bind(this, 'bayer-final-render')}>
-                            &#8595; &nbsp; &nbsp; Découvrir le rendu final &nbsp; &nbsp; &#8595;
+                            &#9660; &nbsp; &nbsp; Découvrir le rendu final &nbsp; &nbsp; &#9660;
                         </a>
                 
                     </div>
@@ -96,6 +96,95 @@ const PortfolioMiscellaneous = React.createClass({
                     type='parallax'
                     fullscreen={false}
                     image='img/portfolio/autres/Bayer_Interieure_02a.jpg'>
+                            
+                    <div className='portfolio-content discreet right'>
+                    
+                        <a 
+                            className='button'
+                            onClick={this.scrollDown.bind(this, 'hotels-samoens')}>
+                            &#9660; &nbsp; &nbsp; Suivant &nbsp; &nbsp; &#9660;
+                        </a>
+                
+                    </div>
+                </Background>
+        
+                <Background
+                    id='hotels-samoens'
+                    style={{zIndex: 3}}
+                    type='background'
+                    fullscreen={false}
+                    color='white'
+                    image='img/portfolio/autres/Hotels_Samoens_Blanc_01.jpg'>
+                            
+                    <div className='portfolio-content right'>
+                    
+                        <h2>Hotels</h2>
+                        <h3>Samoens</h3>
+                        <p>
+                            DHA Savoie
+                        </p>
+
+                        <a 
+                            className='button'
+                            onClick={this.scrollDown.bind(this, 'hotels-samoens-final-render')}>
+                            &#9660; &nbsp; &nbsp; Découvrir le rendu final &nbsp; &nbsp; &#9660;
+                        </a>
+                
+                    </div>
+                    
+                </Background>
+            
+                <Background
+                    id='hotels-samoens-final-render'
+                    style={{zIndex: 2}}
+                    type='parallax'
+                    fullscreen={false}
+                    image='img/portfolio/autres/Hotels_Samoens_Vue01.jpg'>
+                        
+                    <div className='portfolio-content discreet right'>
+                    
+                        <a 
+                            className='button'
+                            onClick={this.scrollDown.bind(this, 'st-priest')}>
+                            &#9660; &nbsp; &nbsp; Suivant &nbsp; &nbsp; &#9660;
+                        </a>
+                
+                    </div>
+
+                </Background>
+        
+                <Background
+                    id='st-priest'
+                    style={{zIndex: 3}}
+                    type='background'
+                    fullscreen={false}
+                    color='white'
+                    image='img/portfolio/autres/StPriest_Incrustation_blanc_01.jpg'>
+                            
+                    <div className='portfolio-content top'>
+                    
+                        <h2>SEGRO Logistics</h2>
+                        <h3>Saint Priest</h3>
+                        <p>
+                            Atelier 4+
+                        </p>
+
+                        <a 
+                            className='button'
+                            onClick={this.scrollDown.bind(this, 'st-priest-final-render')}>
+                            &#9660; &nbsp; &nbsp; Découvrir le rendu final &nbsp; &nbsp; &#9660;
+                        </a>
+                
+                    </div>
+                    
+                </Background>
+            
+                <Background
+                    id='st-priest-final-render'
+                    style={{zIndex: 2}}
+                    type='parallax'
+                    fullscreen={false}
+                    image='img/portfolio/autres/StPriest_VueRapprochee_04a.jpg'>
                             
 
                 </Background>
@@ -116,7 +205,7 @@ const PortfolioMiscellaneous = React.createClass({
                     color='white'>
                     
                     <p>
-                        &copy; Ces images sont propriétés de leurs auteurs
+                        &copy; Ces images sont propriétés de leur auteur
                         et ne peuvent être utilisées sans son accord &copy;
                     </p>
 

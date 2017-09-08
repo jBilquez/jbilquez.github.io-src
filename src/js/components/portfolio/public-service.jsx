@@ -37,7 +37,7 @@ const PortfolioPublicService = React.createClass({
                         <a 
                             className='button'
                             onClick={this.scrollDown.bind(this, 'auxon-final-render')}>
-                            &#8595; &nbsp; &nbsp; Découvrir le rendu final &nbsp; &nbsp; &#8595;
+                            &#9660; &nbsp; &nbsp; Découvrir le rendu final &nbsp; &nbsp; &#9660;
                         </a>
                 
                     </div>
@@ -56,7 +56,7 @@ const PortfolioPublicService = React.createClass({
                         <a 
                             className='button'
                             onClick={this.scrollDown.bind(this, 'crouzet-migette')}>
-                            &#8595; &nbsp; &nbsp; Suivant &nbsp; &nbsp; &#8595;
+                            &#9660; &nbsp; &nbsp; Suivant &nbsp; &nbsp; &#9660;
                         </a>
                 
                     </div>
@@ -80,7 +80,7 @@ const PortfolioPublicService = React.createClass({
                         <a 
                             className='button'
                             onClick={this.scrollDown.bind(this, 'crouzet-migette-final-render')}>
-                            &#8595; &nbsp; &nbsp; Découvrir le rendu final &nbsp; &nbsp; &#8595;
+                            &#9660; &nbsp; &nbsp; Découvrir le rendu final &nbsp; &nbsp; &#9660;
                         </a>
                 
                     </div>
@@ -99,7 +99,7 @@ const PortfolioPublicService = React.createClass({
                         <a 
                             className='button'
                             onClick={this.scrollDown.bind(this, 'groupe-scolaire-anatole')}>
-                            &#8595; &nbsp; &nbsp; Suivant &nbsp; &nbsp; &#8595;
+                            &#9660; &nbsp; &nbsp; Suivant &nbsp; &nbsp; &#9660;
                         </a>
                 
                     </div>
@@ -127,7 +127,7 @@ const PortfolioPublicService = React.createClass({
                         <a 
                             className='button'
                             onClick={this.scrollDown.bind(this, 'groupe-scolaire-anatole-final-render')}>
-                            &#8595; &nbsp; &nbsp; Découvrir le rendu final &nbsp; &nbsp; &#8595;
+                            &#9660; &nbsp; &nbsp; Découvrir le rendu final &nbsp; &nbsp; &#9660;
                         </a>
                 
                     </div>
@@ -146,7 +146,7 @@ const PortfolioPublicService = React.createClass({
                         <a 
                             className='button'
                             onClick={this.scrollDown.bind(this, 'mediatheque-les-fourgs')}>
-                            &#8595; &nbsp; &nbsp; Suivant &nbsp; &nbsp; &#8595;
+                            &#9660; &nbsp; &nbsp; Suivant &nbsp; &nbsp; &#9660;
                         </a>
                 
                     </div>
@@ -174,7 +174,7 @@ const PortfolioPublicService = React.createClass({
                         <a 
                             className='button'
                             onClick={this.scrollDown.bind(this, 'mediatheque-les-fourgs-final-render')}>
-                            &#8595; &nbsp; &nbsp; Découvrir le rendu final &nbsp; &nbsp; &#8595;
+                            &#9660; &nbsp; &nbsp; Découvrir le rendu final &nbsp; &nbsp; &#9660;
                         </a>
                 
                     </div>
@@ -187,6 +187,141 @@ const PortfolioPublicService = React.createClass({
                     type='parallax'
                     fullscreen={false}
                     image='img/portfolio/services_publics/Mediatheque_LesFourgs_Vue01_06a.jpg'>
+                    <div className='portfolio-content discreet right'>
+                    
+                        <a 
+                            className='button'
+                            onClick={this.scrollDown.bind(this, 'quetigny')}>
+                            &#9660; &nbsp; &nbsp; Suivant &nbsp; &nbsp; &#9660;
+                        </a>
+                
+                    </div>
+                </Background>
+
+                <Background
+                    id='quetigny'
+                    style={{zIndex: 2}}
+                    type='background'
+                    fullscreen={false}
+                    color='white'
+                    image='img/portfolio/services_publics/Quetigny_blanc.jpg'>
+
+                    <div className='portfolio-content right'>
+                    
+                        <h2>Maison de l'enfance</h2>
+                        <h3>Quetigny</h3>
+
+                        <p>
+                            Philippe DONZÉ
+                        </p>
+
+                        <a 
+                            className='button'
+                            onClick={this.scrollDown.bind(this, 'quetigny-final-render')}>
+                            &#9660; &nbsp; &nbsp; Découvrir le rendu final &nbsp; &nbsp; &#9660;
+                        </a>
+                
+                    </div>
+
+                </Background>
+        
+                <Background
+                    id='quetigny-final-render'
+                    style={{zIndex: 1}}
+                    type='parallax'
+                    fullscreen={false}
+                    image='img/portfolio/services_publics/Quetigny_perspective.jpg'>
+                    <div className='portfolio-content discreet right'>
+                    
+                        <a 
+                            className='button'
+                            onClick={this.scrollDown.bind(this, 'mediatheque-nommay')}>
+                            &#9660; &nbsp; &nbsp; Suivant &nbsp; &nbsp; &#9660;
+                        </a>
+                
+                    </div>
+                </Background>
+
+                <Background
+                    id='mediatheque-nommay'
+                    style={{zIndex: 2}}
+                    type='background'
+                    fullscreen={false}
+                    color='white'
+                    image='img/portfolio/services_publics/Mediatheque_Nommay_blanc_01.jpg'>
+
+                    <div className='portfolio-content top'>
+                    
+                        <h2>Mediathèque</h2>
+                        <h3>Nommay</h3>
+
+                        <p>
+                            Réhabilitation d'un corps de ferme en médiathèque
+                             - Philippe DONZÉ
+                        </p>
+
+                        <a 
+                            className='button'
+                            onClick={this.scrollDown.bind(this, 'mediatheque-nommay-final-render')}>
+                            &#9660; &nbsp; &nbsp; Découvrir le rendu final &nbsp; &nbsp; &#9660;
+                        </a>
+                
+                    </div>
+
+                </Background>
+        
+                <Background
+                    id='mediatheque-nommay-final-render'
+                    style={{zIndex: 1}}
+                    type='parallax'
+                    fullscreen={false}
+                    image='img/portfolio/services_publics/Mediatheque_Nommay_Vue01_02a.jpg'>
+            
+                    <div className='portfolio-content discreet right'>
+                    
+                        <a 
+                            className='button'
+                            onClick={this.scrollDown.bind(this, 'maison-enfance')}>
+                            &#9660; &nbsp; &nbsp; Suivant &nbsp; &nbsp; &#9660;
+                        </a>
+                
+                    </div>
+            
+                </Background>
+        
+                <Background
+                    id='maison-enfance'
+                    style={{zIndex: 2}}
+                    type='background'
+                    fullscreen={false}
+                    color='white'
+                    image='img/portfolio/services_publics/Mediatheque_Nommay_blanc_01.jpg'>
+
+                    <div className='portfolio-content top'>
+                    
+                        <h2>Maison des Services et de l'Enfance</h2>
+                        <h3>Vercel</h3>
+
+                        <p>
+                            Philippe DONZÉ
+                        </p>
+
+                        <a 
+                            className='button'
+                            onClick={this.scrollDown.bind(this, 'maison-enfance-final-render')}>
+                            &#9660; &nbsp; &nbsp; Découvrir le rendu final &nbsp; &nbsp; &#9660;
+                        </a>
+                
+                    </div>
+
+                </Background>
+        
+                <Background
+                    id='maison-enfance-final-render'
+                    style={{zIndex: 1}}
+                    type='parallax'
+                    fullscreen={false}
+                    image='img/portfolio/services_publics/Maison_Services_enfance_Vue01.jpg'>
             
                 </Background>
         
@@ -206,7 +341,7 @@ const PortfolioPublicService = React.createClass({
                     color='white'>
                     
                     <p>
-                        &copy; Ces images sont propriétés de leurs auteurs
+                        &copy; Ces images sont propriétés de leur auteur
                         et ne peuvent être utilisées sans son accord &copy;
                     </p>
 

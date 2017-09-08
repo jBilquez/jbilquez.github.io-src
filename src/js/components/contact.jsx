@@ -6,7 +6,9 @@ export default React.createClass({
         
     getInitialState() {
         return {
-          processing: false
+          processing: false,
+          feedback: '',
+          feedbackType: 'feedback'
         };
     },
     
@@ -34,7 +36,9 @@ export default React.createClass({
         }
         
         this.setState({
-            processing: true
+            processing: true,
+            feedback: '',
+            feedbackType: 'feedback'
         });
         
         let form = event.target,
@@ -42,16 +46,22 @@ export default React.createClass({
         ;
         
         xhr.onload = () => {
-            this.setState({
-                processing: false
-            });
 
             if (xhr.status === 200) {
                 //Message envoyé
-                console.log('Message sent');
+                this.setState({
+                    processing: false,
+                    feedback: 'Message envoyé',
+                    feedbackType: 'feedback success'
+                });
+                form.reset();
             } else {
                 //Oops :/
-                console.log('message not sent :(');
+                this.setState({
+                    processing: false,
+                    feedback: '<strong>Une erreur est survenue</strong><br />Désolé, votre message n\'a pas été envoyé.<br />Si le problème persiste, contactez moi<br />par téléphone au +33(0)6 82 73 75 20.',
+                    feedbackType: 'feedback error'
+                });
             }
         };
         
@@ -80,7 +90,7 @@ export default React.createClass({
                 
                 </div>
                 <div className='content-right'>
-                    <form action="http://localhost:5000/" onSubmit={this.handleSubmit} id="contact-form">
+                    <form action="https://safe-tor-51141.herokuapp.com/" onSubmit={this.handleSubmit} id="contact-form">
                         <p>
                             <input 
                                 type='text' 
@@ -113,7 +123,13 @@ export default React.createClass({
                             </textarea>
                         </p>
                         <p>
-                            <input className='button' type='submit' value={this.getButtonLabel(this.state.processing)} disabled={this.state.processing} />
+                            <span className={this.state.feedbackType} dangerouslySetInnerHTML={{__html: this.state.feedback}} />
+                            <input 
+                                className='button' 
+                                type='submit' 
+                                value={this.getButtonLabel(this.state.processing)} 
+                                disabled={this.state.processing} 
+                                />
                         </p>
                     </form>
                 </div>
