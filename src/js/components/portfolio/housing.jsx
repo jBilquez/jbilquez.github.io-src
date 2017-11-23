@@ -29,7 +29,7 @@ const PortfolioHousing = React.createClass({
                         <h3>Clermont-Ferrand</h3>
 
                         <p>
-                            Vinci
+                            DHAuvergne Architectes
                         </p>
 
                         <a 
