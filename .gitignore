@@ -1,3 +1,5 @@
 /dist/
 /nbproject/
 /proov.fr.txt
+/node_modules
+/.vscode
