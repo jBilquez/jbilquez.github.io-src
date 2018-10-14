@@ -17,17 +17,17 @@ const PortfolioMiscellaneous = React.createClass({
     render() {
         return (
             <div className='parallax-container' id='portfolio-page'>
-                                    
+
                 <Background
                     id='etalans'
-                    style={{zIndex: 2}}
+                    style={{zIndex: 3}}
                     type='background'
                     fullscreen={false}
                     color='white'
                     image='img/portfolio/autres/Etalans_Blanc_01.jpg'>
-                            
+
                     <div className='portfolio-content top'>
-                    
+
                         <h2>Établissement pour service d'aide par le travail</h2>
                         <h3>Étalans</h3>
 
@@ -35,160 +35,130 @@ const PortfolioMiscellaneous = React.createClass({
                             Projet Lauréat - Philippe DONZÉ
                         </p>
 
-                        <a 
+                        <a
                             className='button'
                             onClick={this.scrollDown.bind(this, 'etalans-final-render')}>
                             &#9660; &nbsp; &nbsp; Découvrir le rendu final &nbsp; &nbsp; &#9660;
                         </a>
-                
+
                     </div>
-                            
+
                 </Background>
 
                 <Background
                     id='etalans-final-render'
-                    style={{zIndex: 1}}
+                    style={{zIndex: 2}}
                     type='parallax'
                     fullscreen={false}
                     image='img/portfolio/autres/Etalans_Vue02_02a.jpg'>
-                            
+
+
                     <div className='portfolio-content discreet right'>
-                    
-                        <a 
+
+                        <a
                             className='button'
-                            onClick={this.scrollDown.bind(this, 'bayer')}>
+                            onClick={this.scrollDown.bind(this, 'bureaux-ht-chazal')}>
                             &#9660; &nbsp; &nbsp; Suivant &nbsp; &nbsp; &#9660;
                         </a>
-                
-                    </div>
-                            
-                </Background>
-        
-                <Background
-                    id='bayer'
-                    style={{zIndex: 3}}
-                    type='background'
-                    fullscreen={false}
-                    color='white'
-                    image='img/portfolio/autres/Bayer_blanc_01.jpg'>
-                            
-                    <div className='portfolio-content top right'>
-                    
-                        <h2>Laboratoire Bayer</h2>
-                        <h3>Lyon</h3>
-                        <p>
-                            Création d'un hall d'accueil
-                        </p>
 
-                        <a 
-                            className='button'
-                            onClick={this.scrollDown.bind(this, 'bayer-final-render')}>
-                            &#9660; &nbsp; &nbsp; Découvrir le rendu final &nbsp; &nbsp; &#9660;
-                        </a>
-                
                     </div>
-                    
+
                 </Background>
-            
+
+
                 <Background
-                    id='bayer-final-render'
+                    id='bureaux-ht-chazal'
                     style={{zIndex: 2}}
-                    type='parallax'
-                    fullscreen={false}
-                    image='img/portfolio/autres/Bayer_Interieure_02a.jpg'>
-                            
-                    <div className='portfolio-content discreet right'>
-                    
-                        <a 
-                            className='button'
-                            onClick={this.scrollDown.bind(this, 'hotels-samoens')}>
-                            &#9660; &nbsp; &nbsp; Suivant &nbsp; &nbsp; &#9660;
-                        </a>
-                
-                    </div>
-                </Background>
-        
-                <Background
-                    id='hotels-samoens'
-                    style={{zIndex: 3}}
                     type='background'
                     fullscreen={false}
                     color='white'
-                    image='img/portfolio/autres/Hotels_Samoens_Blanc_01.jpg'>
-                            
-                    <div className='portfolio-content right'>
-                    
-                        <h2>Hotels</h2>
-                        <h3>Samoens</h3>
-                        <p>
-                            DHA Savoie
-                        </p>
+                    image='img/portfolio/autres/Bureaux_HautsDeChazal_.jpg'>
 
-                        <a 
-                            className='button'
-                            onClick={this.scrollDown.bind(this, 'hotels-samoens-final-render')}>
-                            &#9660; &nbsp; &nbsp; Découvrir le rendu final &nbsp; &nbsp; &#9660;
-                        </a>
-                
-                    </div>
-                    
-                </Background>
-            
-                <Background
-                    id='hotels-samoens-final-render'
-                    style={{zIndex: 2}}
-                    type='parallax'
-                    fullscreen={false}
-                    image='img/portfolio/autres/Hotels_Samoens_Vue01.jpg'>
-                        
-                    <div className='portfolio-content discreet right'>
-                    
-                        <a 
-                            className='button'
-                            onClick={this.scrollDown.bind(this, 'st-priest')}>
-                            &#9660; &nbsp; &nbsp; Suivant &nbsp; &nbsp; &#9660;
-                        </a>
-                
-                    </div>
-
-                </Background>
-        
-                <Background
-                    id='st-priest'
-                    style={{zIndex: 3}}
-                    type='background'
-                    fullscreen={false}
-                    color='white'
-                    image='img/portfolio/autres/StPriest_Incrustation_blanc_01.jpg'>
-                            
                     <div className='portfolio-content top'>
-                    
-                        <h2>SEGRO Logistics</h2>
-                        <h3>Saint Priest</h3>
-                        <p>
-                            Atelier 4+
-                        </p>
 
-                        <a 
+                        <h3>Hauts-De-Chazal</h3>
+
+                        <p>
+                            Architecte : Rachel Thuriet
+                        </p>
+                        <a
                             className='button'
-                            onClick={this.scrollDown.bind(this, 'st-priest-final-render')}>
-                            &#9660; &nbsp; &nbsp; Découvrir le rendu final &nbsp; &nbsp; &#9660;
+                            onClick={this.scrollDown.bind(this, 'pole-sport-1')}>
+                            &#9660; &nbsp; &nbsp; Suivant &nbsp; &nbsp; &#9660;
                         </a>
-                
+
                     </div>
-                    
+
                 </Background>
-            
+
+
                 <Background
-                    id='st-priest-final-render'
-                    style={{zIndex: 2}}
+                    id='pole-sport-1'
+                    style={{zIndex: 1}}
                     type='parallax'
                     fullscreen={false}
-                    image='img/portfolio/autres/StPriest_VueRapprochee_04a.jpg'>
-                            
+                    color='white'
+                    image='img/portfolio/autres/Pole.Sportif_Bes.Trepillot_1_.jpg'>
+
+                    <div className='portfolio-content top'>
+
+                        <h3>Pôle Sportif Besançon Trepillot</h3>
+
+                        <p>
+                            Architecte : Philipe Donzé
+                        </p>
+                        <a
+                            className='button'
+                            onClick={this.scrollDown.bind(this, 'pole-sport-2')}>
+                            &#9660; &nbsp; &nbsp; Suivant &nbsp; &nbsp; &#9660;
+                        </a>
+
+                    </div>
 
                 </Background>
-        
+
+
+                <Background
+                    id='pole-sport-2'
+                    style={{zIndex: 2}}
+                    type='background'
+                    fullscreen={false}
+                    color='white'
+                    image='img/portfolio/autres/Pole.Sportif_Bes.Trepillot_2_.jpg'>
+
+                    <div className='portfolio-content top right'>
+
+                        <h3>Pôle Sportif Besançon Trepillot</h3>
+
+                        <p>
+                            Architecte : Philipe Donzé
+                        </p>
+                        <a
+                            className='button'
+                            onClick={this.scrollDown.bind(this, 'cristel')}>
+                            &#9660; &nbsp; &nbsp; Suivant &nbsp; &nbsp; &#9660;
+                        </a>
+
+                    </div>
+
+                </Background>
+
+                <Background
+                    id='cristel'
+                    style={{zIndex: 1}}
+                    type='parallax'
+                    fullscreen={false}
+                    color='white'
+                    image='img/portfolio/autres/Usine.Cristel_Fesches_.jpg'>
+
+                    <div className='portfolio-content top'>
+
+                        <h3>Usine Cristel - Fesches</h3>
+
+                    </div>
+
+                </Background>
+
                 <Background
                     style={{zIndex: 2, height: '40vh',opacity:0, boxShadow:'none'}}
                     type='background'
@@ -196,14 +166,14 @@ const PortfolioMiscellaneous = React.createClass({
                     color='white'>
 
                 </Background>
-        
+
                 <Background
                     id='portfolio-footer'
                     style={{zIndex: 2}}
                     type='background'
                     fullscreen={false}
                     color='white'>
-                    
+
                     <p>
                         &copy; Ces images sont propriétés de leur auteur
                         et ne peuvent être utilisées sans son accord &copy;
