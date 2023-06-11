@@ -84,13 +84,13 @@ export default React.createClass({
                             utilisant le formulaire de contact ci-contre. Je
                             vous répondrai dans les plus brefs délais. Vous
                             pouvez également me contacter par téléphone ou SMS
-                            au <span className='tel'>+33(0)6 82 73 75 20</span>.
+                            au <span className='tel'>+33(0)7 72 39 58 90</span>.
                         </p>
                     </article>
                 
                 </div>
                 <div className='content-right'>
-                    <form action="https://safe-tor-51141.herokuapp.com/" onSubmit={this.handleSubmit} id="contact-form">
+                    <form action="https://jbilquez-email-receiver.osc-fr1.scalingo.io/" onSubmit={this.handleSubmit} id="contact-form">
                         <p>
                             <input 
                                 type='text' 
